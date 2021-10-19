@@ -3,9 +3,7 @@ EMT notes
 
 This is a collection of materials pertaining to EMT-B class.  This includes materials for preparing for the national [FISDAP](https://www.fisdap.net/ "Field Internship Student Data Acquisition Project (FISDAP)") and [NREMT](https://www.nremt.org/ "National Registry of Emergency Medical Technicians") exams, as well as the Maryland  state [MIEMSS](https://www.miemss.org/home/ "Maryland Institute for EMS Systems") state exam.
 
-The textbook mentioned is *Emergency Care and Transportation of the Sick and Injured (11th ed.)*
-
-**ISBN-13:** 978-1284080179
+The textbook mentioned is *Emergency Care and Transportation of the Sick and Injured (11th ed.)* **ISBN-13:** 978-1284080179
 
 
 ### Study materials:
