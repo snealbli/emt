@@ -16,8 +16,8 @@ The textbook mentioned is *Emergency Care and Transportation of the Sick and Inj
 
 
 ## Additional info
-1. Textbook notes are coded in [TeX](https://en.wikipedia.org/wiki/TeX "TeX").  \
-    I personally use [TeXstudio](https://www.texstudio.org/ "LaTeX made comfortable") for editing, but [any TeX editor](https://en.wikipedia.org/wiki/Comparison_of_TeX_editors "Comparison of TeX editors") should work.
-
-2.  Flashcards are tagged for both chapter number _and_ content, with usage by [Anki](https://apps.ankiweb.net/ "Powerful, intelligent flash cards.") in mind. \
+1.  Flashcards are tagged for both chapter number _and_ content, with usage by [Anki](https://apps.ankiweb.net/ "Powerful, intelligent flash cards.") in mind. \
     Flashcards should work with almost [any flashcard program](https://en.wikipedia.org/wiki/List_of_flashcard_software "List of flashcard software") though.
+
+2. Textbook notes are coded in [TeX](https://en.wikipedia.org/wiki/TeX "TeX").  \
+    I personally use [TeXstudio](https://www.texstudio.org/ "LaTeX made comfortable") for editing, but [any TeX editor](https://en.wikipedia.org/wiki/Comparison_of_TeX_editors "Comparison of TeX editors") should work.
