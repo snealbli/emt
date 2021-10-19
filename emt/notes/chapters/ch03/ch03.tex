@@ -1,0 +1,452 @@
+\documentclass[../../EMT-169.tex]{subfiles}
+\input{../ch01/ch01.tex}
+
+\begin{document}
+\setcounter{chapter}{2}
+\label{ch:chapter3}
+\clearpage
+	
+% Glossary acronym entries %
+	\newacronym{dnr}{DNR}{do not resuscitate}
+	\newacronym{phi}{PHI}{protected health information}
+	
+% Glossary entries
+	\newglossaryentry{abandonment}
+	{
+		name=abandonment,
+		description={unilateral termination of care by the \acrshort{emt} without the patient's consent and without making provisions for transferring care to another medical professional with the skills and training necessary to meet the needs of the patient}
+	}
+
+	\newglossaryentry{advance_directive}
+	{
+		name=advance directive,
+		description={written documentation that specifies medical treatment for a competent patient should the patient become unable to make decisions; also called a living will or health care directive}
+	}
+
+	\newglossaryentry{applied_ethics}
+	{
+		name=applied ethics,
+		description={the manner in which principles of ethics are incorporated into professional conduct}
+	}
+
+	\newglossaryentry{assault}
+	{
+		name=assault,
+		description={unlawfully placing a patient in fear of bodily harm}
+	}
+
+	\newglossaryentry{battery}
+	{
+		name=directive,
+		description={unlawfully touching a patient or providing emergency care without consent}
+	}
+
+	\newglossaryentry{bioethics}
+	{
+		name=bioethics,
+		description={the study of ethics related to issues that arise in health care}
+	}
+
+	\newglossaryentry{breach_of_confidentiality}
+	{
+		name=breach of confidentiality,
+		description={disclosure of information without proper authorization}
+	}
+
+	% certification defined in ch01
+
+	\newglossaryentry{compensatory_damages}
+	{
+		name=compensatory damages,
+		description={damages awarded in a civil lawsuit that are intended to restore the plaintiff to the same condition that he or she was in prior to the incident}
+	}
+
+	\newglossaryentry{competent}
+	{
+		name=competent,
+		description={able to make rational decisions about personal well-being}
+	}
+
+	\newglossaryentry{consent}
+	{
+		name=consent,
+		description={permission to render care}
+	}
+
+	\newglossaryentry{contributory_negligence}
+	{
+		name=contributory negligence,
+		description={a legal defense that may be raised when the defendant feels that the conduct of the plaintiff somehow contributed to any injuries or damages sustained by the plaintiff}
+	}
+
+	\newglossaryentry{credentialing}
+	{
+		name=credentialing,
+		description={an established process to determine the qualifications necessary to be allowed to practice a particular profession, or to function as an organization}
+	}
+
+	\newglossaryentry{decision_making_capability}
+	{
+		name=decision-making capability,
+		description={ability to understand and process information and make a choice regarding appropriate medical care}
+	}
+
+	\newglossaryentry{defamation}
+	{
+		name=defamation,
+		description={the communication of false information about a person that is damaging to that person's reputation or standing in the community}
+	}
+
+	\newglossaryentry{dependent_lividity}
+	{
+		name=dependent lividity,
+		description={blood settling to the lowest point of the body, causing discoloration of the skin; a definite sign of death}
+	}
+
+	\newglossaryentry{depositions}
+	{
+		name=depositions,
+		description={oral questions asked of parties and witnesses under oath}
+	}
+
+	\newglossaryentry{discovery}
+	{
+		name=discovery,
+		description={the phase of a civil lawsuit where the plaintiff and the defense obtain information from each other that will enable the attorneys to have a better understanding of the case and which will assist in preparing for trial.  Discovery includes depositions, interrogatories, and demands for production of records}
+	}
+
+	\newglossaryentry{do_not_resuscitate_orders}
+	{
+		name=\acrfull{dnr} orders,
+		description={your evaluation of the conditions in which you will be operating}
+	}
+
+	\newglossaryentry{durable_power_of_attorney_for_health_care}
+	{
+		name=durable power of attorney for health care,
+		description={a type of advance directive executed by a competent adult that appoints another individual to make medical treatment decisions on his or her behalf, in the event that the person making the appointment loses decision-making capability}
+	}
+
+	\newglossaryentry{duty_to_act}
+	{
+		name=duty to act,
+		description={a medicolegal term relating to certain personnel who either by statute or by function have a responsibility to provide care}
+	}
+
+	\newglossaryentry{emancipated_minor}	% PTS, DO
+	{
+		name=emancipated minor,
+		description={a person who is under the legal age in a given state but, because of other circumstances, is legally considered an adult}
+	}
+
+	\newglossaryentry{emergency}
+	{
+		name=emergency,
+		description={a serious situation, such as injury or illness, that threatens the life or welfare of a person or group of people and requires immediate intervention}
+	}
+	
+	\newglossaryentry{emergency_doctrine}
+	{
+		name=emergency doctrine,
+		description={the principle of law that permits a health care provider to treat a patient in an emergency situation when the patient is incapable of granting consent because of an altered level of consciousness, disability, the effects of drugs or alcohol, or the patient's age}
+	}
+	
+	\newglossaryentry{emergency_medical_care}
+	{
+		name=emergency medical care,
+		description={immediate care or treatment}
+	}
+
+	\newglossaryentry{ethics}
+	{
+		name=ethics,
+		description={the philosophy of right and wrong, of moral duties, and of ideal professional behavior}
+	}
+	
+	\newglossaryentry{expressed_consent}
+	{
+		name=expressed consent,
+		description={a type of consent in which a patient gives verbal or nonverbal authorization for provision of care or transport}
+	}
+	
+	\newglossaryentry{false_imprisonment}
+	{
+		name=false imprisonment,
+		description={the confinement of a person without legal authority or the person's consent}
+	}
+
+	\newglossaryentry{forcible_constraint}
+	{
+		name=forcible constraint,
+		description={the act of physically preventing an individual from initiating any physical action}
+	}
+	
+	\newglossaryentry{good_samaritan_law} 	% PTS
+	{
+		name=Good Samaritan law,
+		description={statutory provisions enacted by many states to protect citizens from liability for errors and omissions in giving good faith emergency medical care, unless there is wanton, gross, or willful negligence}
+	}
+	
+	\newglossaryentry{government_immunity}
+	{
+		name=government immunity,
+		description={legal doctrine that can protect an \acrshort{ems} provider from being sued or which may limit the amount of the monetary judgement that the plaintiff may recover; generally applies only to \acrshort{ems} systems that are operated by municipalities or other governmental entities}
+	}
+
+	\newglossaryentry{gross_negligence}
+	{
+		name=gross negligence,
+		description={conduct that constitutes a willful or reckless disregard for a duty or standard of care}
+	}
+
+	\newglossaryentry{health_care_directive}
+	{
+		name=health care directive,
+		description={See: \gls{advance_directive}}
+	}
+
+	\newglossaryentry{health_care_proxies}
+	{
+		name=health care proxies,
+		description={a type of \gls{advance_directive} executed by a competent adult that appoints another individual to make medical decisions on his or her behalf in the event that the person making the appointment loses decision-making capacity.  Also known as \gls{durable_power_of_attorney_for_health_care}}
+	}
+	
+	\newglossaryentry{implied_consent}
+	{
+		name=implied consent,
+		description={type of consent in which a patient who is unable to give consent is given treatment under the legal assumption that he or she would want treatment}
+	}
+
+	\newglossaryentry{informed_consent}
+	{
+		name=informed consent,
+		description={permission for treatment given by a competent patient after the potential risks, benefits, and alternatives to treatment have been explained}
+	}
+	
+	\newglossaryentry{in_loco_parentis}
+	{
+		name=in loco parentis,
+		description={refers to the legal responsibility of a person or organization to take on some of the functions and responsibilities of a parent}
+	}
+
+	\newglossaryentry{interrogatories}
+	{
+		name=interrogatories,
+		description={written questions that the defense and plaintiff send to one another}
+	}
+	
+	\newglossaryentry{kidnapping}
+	{
+		name=kidnapping,
+		description={the seizing, confining, abducting, or carrying away of a person by force, including transporting a competent adult for medical treatment without his or her consent}
+	}
+
+	\newglossaryentry{libel}
+	{
+		name=libel,
+		description={false and damaging information about a person that is communicated in writing}
+	}
+
+	% licensure defined in ch01
+
+	\newglossaryentry{living_will}
+	{
+		name=living will,
+		description={See: \gls{advance_directive}}
+	}
+
+	\newglossaryentry{medicolegal}
+	{
+		name=medicolegal,
+		description={a term relating to medical jurisprudence (law) or forensic medicine}
+	}
+
+	\newglossaryentry{morality}
+	{
+		name=morality,
+		description={a code of conduct that can be defined by society, religion, or a person, affecting character, conduct, and conscience}
+	}
+
+	\newglossaryentry{negligence}
+	{
+		name=negligence,
+		description={failure to provide the same care that a person with similar training would provide}
+	}
+
+	\newglossaryentry{negligence_per_se}
+	{
+		name=negligence per se,
+		description={a theory that may be used when the conduct of the person being sued is alleged to have occurred in clear violation of a statute}
+	}
+
+	\newglossaryentry{patient_autonomy}
+	{
+		name=patient autonomy,
+		description={the right of a patient to make informed choices regarding his or her health care}
+	}
+
+	\newglossaryentry{protected_health_information}
+	{
+		name=\acrfull{phi},
+		description={any information about health status, provision of health care, or payment for health care that can be linked to an individual.  This is interpreted rather broadly and includes any part of a patient's medical record or payment history}
+	}
+
+	\newglossaryentry{proximate_causation}
+	{
+		name=proximate causation,
+		description={when a person who has a duty abuses it, and causes harm to another individual, the EMT, the agency, and/or the medical director may be sued for negligence}
+	}
+
+	\newglossaryentry{punitive_damages}
+	{
+		name=punitive damages,
+		description={damages that are sometimes awarded in a civil lawsuit when the conduct of the defendant was intentional or constituted a reckless disregard for the safety of the public}
+	}
+
+	\newglossaryentry{putrefaction}
+	{
+		name=putrefaction,
+		description={decomposition of body tissues; a definitive sign of death}
+	}
+
+	\newglossaryentry{res_ipsa_loquiter}
+	{
+		name=res ipsa loquiter,
+		description={when the EMT or an EMS system is held liable even the plaintiff is unable to clearly demonstrate how an injury occurred}
+	}
+	
+	\newglossaryentry{rigor_mortis}
+	{
+		name=rigor mortis,
+		description={stiffening of the body muscles; a definitive sign of death}
+	}
+	
+	\newglossaryentry{scope_of_practice}
+	{
+		name=scope of practice,
+		description={most commonly defined by state law; outlines the care that the EMT is able to provide for the patient}
+	}
+
+	\newglossaryentry{slander}
+	{
+		name=slander,
+		description={false and damaging information about a person that is communicated by the spoken word}
+	}
+	
+	\newglossaryentry{standard_of_care}
+	{
+		name=standard of care,
+		description={written, accepted levels of emergency care expected by reason of training and profession; written by legal or professional organizations so that patients are not exposed to unreasonable risk or harm}
+	}
+	
+	\newglossaryentry{statue_of_limitations}
+	{
+		name=statue of limitations,
+		description={the time within which a case must be commenced}
+	}
+
+	\newglossaryentry{tort}
+	{
+		name=tort,
+		description={a wrongful act that gives rise to a civil lawsuit}
+	}
+
+
+\chapter{Medical, Legal, and Ethical Issues}
+
+\subsection*{Abbreviations}
+\begin{description}[leftmargin=!,labelwidth=\widthof{\bfseries ABCD}]
+	\item [\acrshort{dnr}] 		\acrlong{dnr}
+	\item [\acrshort{phi}] 		\acrlong{phi}
+\end{description}
+
+\subsection*{Definitions}
+\begin{description}	
+	\item [\gls{abandonment}] 						\glsdesc{abandonment}
+	\item [\gls{advance_directive}] 				\glsdesc{advance_directive}
+	\item [\gls{applied_ethics}] 					\glsdesc{applied_ethics}
+	\item [\gls{assault}] 							\glsdesc{assault}
+	\item [\gls{battery}] 							\glsdesc{battery}
+	\item [\gls{bioethics}] 						\glsdesc{bioethics}
+	\item [\gls{breach_of_confidentiality}] 		\glsdesc{breach_of_confidentiality}
+	\item [\gls{certification}] 					\glsdesc{certification}					% ch01
+	\item [\gls{compensatory_damages}] 				\glsdesc{compensatory_damages}
+	\item [\gls{competent}] 						\glsdesc{competent}
+	\item [\gls{consent}] 							\glsdesc{consent}
+	\item [\gls{contributory_negligence}] 			\glsdesc{contributory_negligence}
+	\item [\gls{credentialing}] 					\glsdesc{credentialing}
+	\item [\gls{decision_making_capability}] 		\glsdesc{decision_making_capability}
+	\item [\gls{defamation}] 						\glsdesc{defamation}
+	\item [\gls{dependent_lividity}] 				\glsdesc{dependent_lividity}
+	\item [\gls{depositions}] 						\glsdesc{depositions}
+	\item [\gls{discovery}] 						\glsdesc{discovery}
+	\item [\gls{do_not_resuscitate_orders}] 		\glsdesc{do_not_resuscitate_orders}
+	\item [\gls{durable_power_of_attorney_for_health_care}] 	\glsdesc{durable_power_of_attorney_for_health_care}
+	\item [\gls{duty_to_act}] 						\glsdesc{duty_to_act}
+	\item [\gls{emancipated_minor}] 				\glsdesc{emancipated_minor}
+	\item [\gls{emergency}] 						\glsdesc{emergency}
+	\item [\gls{emergency_doctrine}] 				\glsdesc{emergency_doctrine}
+	\item [\gls{emergency_medical_care}] 			\glsdesc{emergency_medical_care}
+	\item [\gls{ethics}] 							\glsdesc{ethics}
+	\item [\gls{expressed_consent}] 				\glsdesc{expressed_consent}
+	\item [\gls{false_imprisonment}] 				\glsdesc{false_imprisonment}
+	\item [\gls{forcible_constraint}] 				\glsdesc{forcible_constraint}
+	\item [\gls{good_samaritan_law}] 				\glsdesc{good_samaritan_law}
+	\item [\gls{government_immunity}] 				\glsdesc{government_immunity}
+	\item [\gls{gross_negligence}] 					\glsdesc{gross_negligence}
+	\item [\gls{health_care_directive}] 			\glsdesc{health_care_directive}
+	\item [\gls{health_care_proxies}] 				\glsdesc{health_care_proxies}
+	\item [\gls{implied_consent}] 					\glsdesc{implied_consent}
+	\item [\gls{informed_consent}] 					\glsdesc{informed_consent}
+	\item [\gls{in_loco_parentis}] 					\glsdesc{in_loco_parentis}
+	\item [\gls{interrogatories}] 					\glsdesc{interrogatories}
+	\item [\gls{kidnapping}] 						\glsdesc{kidnapping}
+	\item [\gls{libel}] 							\glsdesc{libel}
+	\item [\gls{licensure}] 						\glsdesc{licensure}						% ch01
+	\item [\gls{living_will}] 						\glsdesc{living_will}
+	\item [\gls{medicolegal}] 						\glsdesc{medicolegal}
+	\item [\gls{morality}] 							\glsdesc{morality}
+	\item [\gls{negligence}] 						\glsdesc{negligence}
+	\item [\gls{negligence_per_se}] 				\glsdesc{negligence_per_se}
+	\item [\gls{patient_autonomy}] 					\glsdesc{patient_autonomy}
+	\item [\gls{protected_health_information}] 		\glsdesc{protected_health_information}
+	\item [\gls{proximate_causation}] 				\glsdesc{proximate_causation}
+	\item [\gls{punitive_damages}] 					\glsdesc{punitive_damages}
+	\item [\gls{putrefaction}] 						\glsdesc{putrefaction}
+	\item [\gls{res_ipsa_loquiter}] 				\glsdesc{res_ipsa_loquiter}
+	\item [\gls{rigor_mortis}] 						\glsdesc{rigor_mortis}
+	\item [\gls{scope_of_practice}] 				\glsdesc{scope_of_practice}
+	\item [\gls{slander}] 							\glsdesc{slander}
+	\item [\gls{standard_of_care}] 					\glsdesc{standard_of_care}
+	\item [\gls{statue_of_limitations}] 			\glsdesc{statue_of_limitations}
+	\item [\gls{tort}] 								\glsdesc{tort}
+\end{description}\hfill \\
+
+%\afterpage{%
+%\clearpage
+%\subsection*{Potential Test Questions}
+%\begin{outline}[enumerate]
+%	\1 		What are some other terms for an advance directive?
+%	\1[] 	
+%	
+%	\1 		What are some types of advance directives?
+%	\1[] 	
+%	
+%	\1 		List the definitive signs of death.
+%	\1[] 	obvious mortal damage
+%	\1[] 	putrification
+%	\1[] 	dependent lividity
+%	\1[] 	rigor mortis
+%	
+%	\1 		What is the difference between libel and slander?
+%	\1[] 	Libel is written, libel is spoken.
+%	
+%	\1 		What are some legal protections that exist for first responders?
+%	\1[] 	Government immunity.
+%	
+%	\1 		Under what circumstances might an \acrshort{emt} be found liable in a court of law?
+%	\1[] 	s
+%\end{outline}
+%}
+\end{document}
+

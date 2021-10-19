@@ -1,0 +1,577 @@
+\documentclass[../../EMT-169.tex]{subfiles}
+\input{../ch09/ch09.tex}
+
+\begin{document}
+\setcounter{chapter}{10}
+\label{ch:chapter11}
+\clearpage
+	
+% Glossary acronym entries %
+	\newacronym{im}{IM}{intramuscular}
+	\newacronym{in}{IN}{intranasal}
+	\newacronym{io}{IO}{intraosseous}
+	% acronym {iv} defined in ch01
+	\newacronym{mdi}{MDI}{metered-dose inhaler}
+	\newacronym{mi}{MI}{myocardial infarction}
+	\newacronym{otc}{OTC}{over-the-counter}
+	\newacronym{po}{PO}{per oral}
+	\newacronym{pr}{PR}{per rectum}
+	\newacronym{sc}{SC}{subcutaneous}
+	\newacronym{sl}{SL}{sublingual}
+	
+% Glossary entries	
+	\newglossaryentry{absorption}
+	{
+		name=absorption,
+		description={the process by which medications travel through body tissues to the bloodstream}
+	}
+
+	\newglossaryentry{action}
+	{
+		name=action,
+		description={the therapeutic effect that a medication is expected to have on the body}
+	}
+
+	\newglossaryentry{activated_charcoal}
+	{
+		name=activated charcoal,
+		description={An oral medication that binds and adsorbs ingested toxins in the gastrointestinal (GI) tract }
+	}
+
+	\newglossaryentry{agonist}
+	{
+		name=agonist,
+		description={medication that causes stimulation of receptors}
+	}
+
+	\newglossaryentry{antagonist}
+	{
+		name=antagonist,
+		description={medication that binds to a receptor and blocks other medications or chemicals from attaching there}
+	}
+
+	\newglossaryentry{anaphylaxis}
+	{
+		name=anaphylaxis,
+		description={in extreme life-threatening systemic allergic reaction that may include shock and respiratory failure}
+	}
+
+	\newglossaryentry{capsule}
+	{
+		name=capsule,
+		description={gelatin shells filled with powdered or liquid medication}
+	}
+
+	\newglossaryentry{contraindication}
+	{
+		name=contraindication,
+		description={when a medication would either harm the patient or have no positive effect}
+	}
+
+	% intravenous defined in ch09
+
+	\newglossaryentry{dose}
+	{
+		name=dose,
+		description={the amount of the medication that is given}
+	}
+
+	\newglossaryentry{enteral}
+	{
+		name=enteral,
+		description={absorbed via the digestive system}
+	}
+
+	\newglossaryentry{generic_name}
+	{
+		name=generic name,
+		description={the original chemical name of a medication (in contrast with one of its proprietary, or trade name); the name is not capitalized}
+	}
+
+	\newglossaryentry{hypoglycemia}
+	{
+		name=hypoglycemia,
+		description={extremely low blood sugar}
+	}
+
+	\newglossaryentry{indication}
+	{
+		name=indications,
+		description={reasons or conditions for which a particular medication is given}
+	}
+
+	\newglossaryentry{inhalation}
+	{
+		name=inhalation,
+		description={administered via inhalation into the lungs}
+	}
+
+	\newglossaryentry{intramuscular}
+	{
+		name=\acrfull{im},
+		description={administered via the muscle}
+	}
+
+	\newglossaryentry{intranasal}
+	{
+		name=\acrfull{in},
+		description={administered into the nostril (usually via mucosal atomizer device)}
+	}
+
+	\newglossaryentry{intraosseous}
+	{
+		name=\acrfull{io},
+		description={administered into the bone}
+	}
+
+	% intravenous defined in ch01
+	
+	\newglossaryentry{medication}
+	{
+		name=medication,
+		description={substance used to treat or prevent disease or relieve pain}
+	}
+
+	\newglossaryentry{metered_dose_inhaler}
+	{
+		name=\acrfull{mdi},
+		description={a device that delivers a consistent amount of medication using a short burst of aerosolized medicine via inhalation}
+	}
+
+	\newglossaryentry{myocardial_infarction}
+	{
+		name=\acrfull{mi},
+		description={heart attack}
+	}
+
+	\newglossaryentry{parenteral}
+	{
+		name=parenteral,
+		description={absorbed via means other than the digestive system}
+	}
+
+	\newglossaryentry{per_oral}
+	{
+		name=\acrfull{po},
+		description={administered by the mouth}
+	}
+
+	\newglossaryentry{per_rectum}
+	{
+		name=\acrfull{pr},
+		description={administered by the rectum}
+	}
+
+	\newglossaryentry{pharmacodynamics}
+	{
+		name=pharmacodynamics,
+		description={the process by which medication works on the body}
+	}
+
+	\newglossaryentry{pharmacology}
+	{
+		name=pharmacology,
+		description={the science of drugs, including their ingredients, preparation, uses, and actions on the body}
+	}
+
+	\newglossaryentry{proprietary_name}
+	{
+		name=proprietary name,
+		description={the brand name that a manufacturer gives a medication; the name is capitalized}
+	}
+
+	\newglossaryentry{side_effect}
+	{
+		name=side effect,
+		description={any action of a medication other than the desired ones}
+	}
+
+	\newglossaryentry{solution}
+	{
+		name=solution,
+		description={liquid mixture of one or more substances that cannot be separated simply}
+	}
+
+	\newglossaryentry{sublingual}
+	{
+		name=\acrfull{sl},
+		description={under the tongue; a medication route}
+	}
+
+	\newglossaryentry{subcutaneous}
+	{
+		name=\acrfull{sc},
+		description={administered under the skin}
+	}
+
+	\newglossaryentry{suspension}
+	{
+		name=suspension,
+		description={substance that does not dissolve well in liquids}
+	}
+
+	\newglossaryentry{sympathomimetic}
+	{
+		name=sympathomimetic,
+		description={simulating sympathetic nervous action in physiological effect}
+	}
+
+	\newglossaryentry{systemic_effect}
+	{
+		name=systemic effect,
+		description={whole-body}
+	}
+
+	\newglossaryentry{tablet}
+	{
+		name=tablet,
+		description={contain other materials that are mixed with the medication and compressed}
+	}
+
+	\newglossaryentry{trade_name}
+	{
+		name=trade name,
+		description={the brand name that a manufacturer gives a medication; the name is capitalized. \newline Also called proprietary name}
+	}
+
+	\newglossaryentry{transdermal}
+	{
+		name=transdermal,
+		description={administered via the skin (alt. transcutaneous)}
+	}
+
+	\newglossaryentry{transcutaneous}
+	{
+		name=transcutaneous,
+		description={administered via the skin (alt. transdermal)}
+	}
+
+	\newglossaryentry{unintended_effect}
+	{
+		name=unintended effect,
+		description={effects that are undesirable but pose little risk to the patient}
+	}
+
+	\newglossaryentry{untoward_effect}
+	{
+		name=untoward effect,
+		description={effects that can be harmful to the patient}
+	}
+	
+	
+\chapter{Principles of Pharmacology}
+
+\subsection*{Abbreviations}
+\begin{description}[leftmargin=!,labelwidth=\widthof{\bfseries ABCD}]
+	\item [\acrshort{im}] 		\acrlong{im}
+	\item [\acrshort{in}] 		\acrlong{in}
+	\item [\acrshort{io}] 		\acrlong{io}
+	\item [\acrshort{iv}] 		\acrlong{iv}
+	\item [\acrshort{mdi}] 		\acrlong{mdi}
+	\item [\acrshort{mi}] 		\acrlong{mi}
+	\item [\acrshort{otc}] 		\acrlong{otc}
+	\item [\acrshort{po}] 		\acrlong{po}
+	\item [\acrshort{pr}] 		\acrlong{pr}
+	\item [\acrshort{sc}] 		\acrlong{sc}
+	\item [\acrshort{sl}] 		\acrlong{sl}
+\end{description}
+
+\subsection*{Definitions}
+\begin{description}	
+	\item [\gls{absorption}]				\glsdesc{absorption}
+	\item [\gls{action}]					\glsdesc{action}
+	\item [\gls{agonist}]					\glsdesc{agonist}
+	\item [\gls{antagonist}]				\glsdesc{antagonist}
+	\item [\gls{capsule}]					\glsdesc{capsule}
+	\item [\gls{contraindication}]			\glsdesc{contraindication}
+	\item [\gls{diaphoretic}]				\glsdesc{diaphoretic}
+	\item [\gls{dose}]						\glsdesc{dose}
+	\item [\gls{enteral}]					\glsdesc{enteral}
+	\item [\gls{generic_name}]				\glsdesc{generic_name}
+	\item [\gls{hypoglycemia}]				\glsdesc{hypoglycemia}
+	\item [\gls{indication}]				\glsdesc{indication}
+	\item [\gls{inhalation}]				\glsdesc{inhalation}
+	\item [\gls{intramuscular}]				\glsdesc{intramuscular}
+	\item [\gls{intranasal}]				\glsdesc{intranasal}
+	\item [\gls{intraosseous}]				\glsdesc{intraosseous}
+	\item [\gls{intravenous}]				\glsdesc{intravenous}
+	\item [\gls{medication}]				\glsdesc{medication}
+	\item [\gls{metered_dose_inhaler}] 		\glsdesc{metered_dose_inhaler}
+	\item [\gls{myocardial_infarction}] 	\glsdesc{myocardial_infarction}
+	\item [\gls{parenteral}] 				\glsdesc{parenteral}
+	\item [\gls{per_oral}] 					\glsdesc{per_oral}
+	\item [\gls{per_rectum}] 				\glsdesc{per_rectum}
+	\item [\gls{pharmacodynamics}] 			\glsdesc{pharmacodynamics}
+	\item [\gls{pharmacology}] 				\glsdesc{pharmacology}
+	\item [\gls{proprietary_name}] 			\glsdesc{proprietary_name}
+	\item [\gls{side_effect}] 				\glsdesc{side_effect}
+	\item [\gls{solution}] 					\glsdesc{solution}
+	\item [\gls{sublingual}] 				\glsdesc{sublingual}
+	\item [\gls{subcutaneous}] 				\glsdesc{subcutaneous}
+	\item [\gls{suspension}] 				\glsdesc{suspension}
+	\item [\gls{sympathomimetic}]			\glsdesc{sympathomimetic}
+	\item [\gls{systemic_effect}] 			\glsdesc{systemic_effect}
+	\item [\gls{tablet}] 					\glsdesc{tablet}
+	\item [\gls{trade_name}] 				\glsdesc{trade_name}
+	\item [\gls{transdermal}] 				\glsdesc{transdermal}
+	\item [\gls{transcutaneous}] 			\glsdesc{transcutaneous}
+	\item [\gls{unintended_effect}] 		\glsdesc{unintended_effect}
+	\item [\gls{untoward_effect}] 			\glsdesc{untoward_effect}
+\end{description}\hfill \\
+\clearpage
+
+\section{Medication Routes of Administration}
+\paragraph{As an \acrshort{emt}, you will}
+\begin{enumerate}
+	\item Administer medications.
+	\item Help patients self-administer medications.
+\end{enumerate}
+
+\subsection{Routes of Administration}
+\begin{outline}	
+	\1[] \textbf{absorption:} via tissues to the blood stream
+	\2[] \textbf{enteral medications} enter the body \underline{through} the digestive system.
+	\2[] \textbf{parenteral medications} enter the body through means \underline{other than} the digestive system.
+\end{outline}		
+
+\begin{table}[ht]
+	\centering
+	\caption{Routes of Medication Administration}
+	
+	\bgroup
+	\def\arraystretch{1.25}%
+	\begin{tabular}{|p{3cm}|p{1.5cm}|p{5cm}|p{4cm}|}
+		\hline
+		\textbf{name} 			& \textbf{abbrev.} 	& \textbf{entry point}			& \textbf{rate of absorption} \\ \hline \hline
+		
+		\multicolumn{4}{l}{\bfseries enteral} \\ \hline
+		[per] oral				& PO				& by mouth						& slow \\ \hline 
+		[per] rectal			& PR				& by rectum						& rapid \\ \hline
+		sublingual 				& SL 				& under the tongue				& rapid \\ \hline
+		
+		\multicolumn{4}{l}{\bfseries parenteral} \\ \hline
+		inhalation	 			& 					& inhaled into the lungs		& rapid \\ \hline
+		intramuscular 			& IM				& into the muscle 				& moderate \\ \hline
+		intranasal				& IN  				& into the nostril \newline	(via mucosal atomizer device)	
+																					& rapid \\ \hline
+		intraosseous 			& IO 				& into the bone					& immediate \\ \hline
+		intravenous 			& IV 				& into the vein 				& immediate \\ \hline
+		subcutaneous 			& SC 				& beneath the skin				& slow \\ \hline
+		transcutaneous 
+		\newline
+		(transdermal)			&   				& through the skin  			& slow \\ \hline
+	\end{tabular}
+	\egroup
+\end{table}\hfill \\
+
+\pagebreak
+\subsection{Medication Form}
+Medication form is chosen by the manufacturer to ensure \sout{maximum profits} the following:
+\begin{enumerate}
+	\item Proper route of administration
+	\item Timing of the medication’s release into the bloodstream
+	\item Effects on the target organs or body systems
+\end{enumerate}
+
+\paragraph{Tablets, Capsules}
+\begin{outline}	
+	\1[] \textbf{Capsules} are gelatin shells filled with powdered or liquid medication.
+	\1[] \textbf{Tablets} are contain other materials that are mixed with the medication and compressed.
+\end{outline}	
+
+\paragraph{Solutions, Suspensions}
+\begin{outline}
+	\1[] \textbf{Solutions} are liquid mixtures of one or more substances that \underline{cannot be separated simply}.
+		\2[] Does not need to be shaken.  Can be given as an IV, IM, or SC injection
+		\2[] \textbf{Example}: 
+			\3[] epinephrine using an auto-injected (i.e. an Epi-Pen) \newline
+	\1[] \textbf{Suspensions} substances that do not dissolve well in liquids; \underline{will separate if undisturbed/filtered}.
+		\2[] Very important to shake before using!
+		\2[] Injectable suspensions only via IM or SC
+	\2[] \textbf{Examples}:
+		\3[] activated charcoal (PO)
+		\3[] some hormone shots and vaccinations (IM or SC)
+		\3[] calamine lotion (topical)
+\end{outline}
+
+\paragraph{Metered-dose inhaler (MDI)}
+\begin{outline}
+	\1[] \textbf{Metered-dose inhalers (MDI)} direct aerosolizable liquids and fine powders through the mouth and into the lungs via inhalation.
+		\2[] Delivers the \underline{same consistent dosage every time}	
+		\2[] Very important to shake before using!
+		\2[] \textbf{Example}:
+			\3[] asthma inhalers
+\end{outline}
+
+
+\paragraph{Topical medications}
+\begin{outline}
+	\1[] Applied to \underline{skin surface}
+	\1[] affects \underline{only that area}
+	\1[] includes lotions, creams, and ointments
+	\1[] \textbf{Examples}:
+		\2[] Calamine lotion (lotion) 
+		\2[] hydrocortisone cream (cream) 
+		\2[] Neosporin ointment (ointment) 
+\end{outline}
+
+\paragraph{Transcutaneous medications}
+\begin{outline}	
+	\1[] \textbf{transcutaneous/transdermal medications} are absorbed through the skin.
+	\2[] May have systematic effects (compare with \textbf{topical medications} whose effects are limited to applied area.)
+	\2[] Touching will absorb medication same as patient!
+	\2[] \textbf{Examples}:
+		\3[] nitroglycerin paste
+		\3[] adhesive patch
+\end{outline}
+
+\paragraph{Gels}
+\begin{outline}	
+	\1[] Semi-liquid
+	\1[] Administered in capsules or plastic tubes
+	\1[] \textbf{Example}:
+		\2[] oral glucose
+\end{outline}
+
+\paragraph{Gases for Inhalation}
+\begin{outline}	
+	\1[] Outside of OR, most commonly used is \underline{oxygen}
+	\1[] Usually delivered through a \underline{nonrebreathing mask} or \underline{nasal cannula}
+	\1[] \textbf{Example}:
+		\2[] oxygen
+\end{outline}\hfill \\
+
+\section{Administering Medication}
+\subsection{The 6 "Rights" of Medication Administration}
+\begin{description}
+	\item [Right patient]: Patient who \underline{needs} medication = patient who \underline{receives} medication.
+	\item [Right medication]: Verify that it is the correct medication and prescription.
+	\item [Right dose]: Verify the \underline{form} and \underline{dose} of the medication.
+	\item [Right route]: Verify the \underline{route} of the medication.
+	\item [Right time]: Check the \underline{expiration date} and \underline{condition} of the medication.
+	\item [Right documentation]: Document your actions and the patient’s response.
+\end{description}
+
+\subsection{Unit may carry:}
+\begin{itemize}
+	\item Oxygen
+	\item Oral glucose
+	\item Activated charcoal
+	\item Aspirin
+	\item Epinephrine
+\end{itemize}
+
+\subsection{Circumstances in which medications may be administered:}
+\begin{outline}[enumerate]
+	\1 Peer-assisted administration
+	\1 Patient-assisted administration
+	\1 \acrshort{emt}-administered medications
+\end{outline}
+
+\paragraph{Determined by} state and local protocols, medical control \newline
+The state, department, and medical director will define which\underline{ medications are carried} on your ambulance. \hfill \\
+
+\begin{table}[ht]
+	\centering
+	\caption{Advantages \& Disadvantages of Medication Administration Routes}
+	
+	\bgroup
+	\def\arraystretch{2}%
+	\begin{tabular}{p{4.5cm}|P{3cm}|p{5.5cm}}
+		\hline
+		\textbf{Advantages}									& 	\textbf{Route of \newline Administration}	&	\textbf{Disadvantages} \\ \hline \hline
+		ease of access \newline
+		comfort level 										&   PO											& 	digestive tract can be easily affected by foods, stress, and illness \newline
+		speed of movement of food through the tract dramatically changes the speed of absorption \\
+		
+		easy to advise patients \newline
+		quick absorption  									&   SL											& 	Constant evaluation of the airway \newline
+		Possible choking \newline
+		Not for uncooperative or unconscious patients \\
+		
+		quick, easy access without using vein \newline
+		stable blood flow to muscle  						&   IM											&	Use of a needle (and subsequent pain) \newline
+		Patients may fear pain or injury \\ \hline
+	\end{tabular}
+	\egroup
+\end{table}
+	
+\afterpage{%
+	\clearpage
+\begin{table}[ht]
+	\centering
+	\caption{Drugs that can be Administered by \acrshort{emt}s}
+	\bgroup
+	\def\arraystretch{1.25}%
+	\begin{tabular}{|p{1.5cm}|P{2cm}|P{2.5cm}|p{3cm}|p{5cm}|}
+		\hline 
+		\textbf{Drug}			& 	\textbf{Routes of \newline 
+											Admin.}			&	\textbf{Forms}			&	\textbf{Uses} 							&	\textbf{Contraindications}	\\ \hline \hline
+		
+		activated\newline
+		charcoal				&	PO						&	suspension				&	Reduces the amount of medication 
+																							being absorbed							&	Do not give to patients with altered level of consciousness. \\ \hline
+		
+		oral\newline
+		glucose					&	PO						&	gel, \newline
+																tablet					&	Treats hypoglycemia						&	Do not give to an unconscious patients, 
+		or one who cannot protect the airway. \\ \hline
+		
+		aspirin					&	PO						&	tablet					&	Useful during heart attack				&	Hypersensitivity to aspirin 
+		Liver damage, bleeding disorder, asthma \newline
+		Should not be given to children  \\ \hline
+		
+		nitro-\newline
+		gylcerin				&	SL, \newline	
+									inhalation \newline		
+									(1 spray =\newline 
+									1 tablet) 				&	SL tablet, \newline
+																metered-dose spray		&	Relieves angina pain \newline
+																							Increases blood flow \newline
+																							Relaxes veins 							&	Possibility of MI, if no relief \newline
+																																	Should \underline{not} be used with erectile dysfunction medications \\ \hline
+		
+		epine-\newline
+		phrine 					&	IM						&	auto-injector			& 	Treats life-threatening anaphylaxis		&	Do not give to patients with hypertension, hypothermia, MI, or wheezing.	\\ \hline
+		
+		Naloxone				&	IN						& 	atomizer				&	Reverses the effects of opioid overdose	&	The effects of naloxone may not last as long as those of opioids; repeat doses may be necessary.  Can cause severe withdrawal symptoms; patients may become violent \\ \hline
+		
+		oxygen					&	inhalation				&	gas:
+																nonrebreathing mask (preferred) \newline
+																nasal cannula 			&	When a patient is not breathing, 
+																							having trouble getting air				&	Ensure no open flames in vicinity \\ \hline
+	\end{tabular}
+	\egroup
+\end{table} %
+}
+
+\afterpage{%
+\clearpage
+\subsection{Potential Test Questions}
+\begin{outline}{enumerate}
+	\1 What are enteral medication routes?  
+		\1[] Per oral, per rectal, sublingual
+	\1  What are parenteral medication routes?  
+		\1[] intramuscular, intranasal, intraosseous, intravenous, subcutaneous, transcutaneous (transdermal)
+	\1  What are the differences between capsules and tablets?  
+		\1[] Capsules are gelatin shells filled with powder or liquid. Tablets having their ingredients compressed under high pressure; may contain other materials mixed with the medication.
+	\1  What are the differences between solutions and suspensions?
+		\1[] A solution contains substances that \textit{cannot be separated by standing or filtering}, whereas a solution will separate if undisturbed or filtered.
+	\1  What should you do before administering a suspension?   
+		\1[] Shake or swirl
+			\2[] \textbf{Why?}
+			\2[] To ensure that the patient gets receives the right amount of medication.
+				\3[] \textbf{Why?}  
+				\3[] Suspensions contain substances that do not dissolve well; they will separate if they stand or are filtered.
+	\1  What is an example of a solution? 
+		\1[] epinephrine administered via auto-injector (i.e. an EpiPen)
+	\1  What is an example of a suspension? 
+		\1[] Activated charcoal
+	\1  What is the difference between a metered-dose inhaler and a nebulizer? 
+		\1[] Nebulizer has electric components and must be recharged
+	\1 What is the difference between transdermal medications and topical medications?
+		\1[] topical medications affect only the intended site, transdermal medications can have systemic effects.
+\end{outline}
+}
+
+\end{document}

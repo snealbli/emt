@@ -1,0 +1,838 @@
+\documentclass[../../EMT-169.tex]{subfiles}
+\input{../ch01/ch01.tex}
+\input{../ch09/ch09.tex}
+
+
+\begin{document}
+\setcounter{chapter}{12}
+\label{ch:chapter13}
+\clearpage
+	
+% Glossary acronym entries %
+	\newacronym{abc}{ABC}{airway (obstruction) \newline breathing (respiratory arrest) \newline circulation (cardiac arrest)}
+	% acronym {aed} defined in ch01
+	\newacronym{afib}{a-fib}{atrial fibrillation}
+	\newacronym{aha}{AHA}{American Heart Association}
+	\newacronym{aicd}{AICD}{automated implanted cardioverter-defibrillator}
+	% acronym {als} defined in ch01
+	% acronym {bls} defined in ch01
+	\newacronym{bvm}{BVM}{bag-valve mask}
+	\newacronym{cpr}{CPR}{cardiopulmonary resuscitation}
+	\newacronym{itd}{ITD}{impedance threshold device}
+	% acronym {iv} defined in ch11
+	\newacronym{ldb}{LDB}{load-distributing band}
+	\newacronym{rosc}{ROSC}{return of spontaneous circulation}
+	\newacronym{sca}{SCA}{sudden cardiac arrest}
+	\newacronym{vfib}{v-fib}{ventricular fibrillation}
+	\newacronym{vtac}{v-tac}{ventricular tachycardia}
+
+% Glossary entries	
+	\newglossaryentry{active_compression_decompression_CPR}
+	{
+		name=active compression decompression \acrshort{cpr},
+		description={technique that involves compressing the chest and then actively pulling it back up to its neutral position and beyond}
+	}
+
+	\newglossaryentry{atrial_fibrillation}
+	{
+		name=\acrfull{afib},
+		description={upper heart chambers contract irregularly}
+	}
+
+	% automated_external_defibrillator defined in ch01
+
+	\newglossaryentry{anoxia}
+	{
+		name=anoxia,
+		description={absence of oxygen}
+	}
+
+	\newglossaryentry{aortocaval_compression}
+	{
+		name=aortocaval compression,
+		description={relating to the aorta and the vena cava}
+	}
+
+	\newglossaryentry{apneic}
+	{
+		name=apneic,
+		description={absence of spontaneous breathing}
+	}
+
+	\newglossaryentry{automated_implanted_cardioverter_defibrillator}
+	{
+		name=\acrfull{aicd},
+		description={the technical term for \emph{pacemaker}}
+	}
+
+	\newglossaryentry{basic_life_support}
+	{
+		name=\acrfull{bls},
+		description={noninvasive, emergency lifesaving care that is used to treat medical conditions, including airway obstruction, respiratory arrest, and cardiac arrest}
+	}
+
+	\newglossaryentry{bradycardia}
+	{
+		name=bradycardia,
+		description={slow heart rate}
+	}
+
+	\newglossaryentry{cardiopulmonary_resuscitation}
+	{
+		name=\acrfull{cpr},
+		description={the combination of chest compressions and rescue breathing used to establish adequate ventilation and circulation in a patient who is not breathing and has no pulse}
+	}
+
+	% cyanosis defined in ch09
+
+	\newglossaryentry{dyspnea}
+	{
+		name=dyspnea,
+		description={difficulty or trouble breathing}
+	}
+
+	\newglossaryentry{fundus}
+	{
+		name=fundus,
+		description={part of a hollow organ that is farthest from the opening}
+	}
+
+	\newglossaryentry{gastric_distention}
+	{
+		name=gastric distention,
+		description={a condition in which air fills the stomach, often as a result of high volume and pressure during artificial ventilation}
+	}
+
+	\newglossaryentry{head_tilt_chin_lift_maneuver}
+	{
+		name=head tilt-chin lift maneuver,
+		description={a combination of two movements to open the airway by tilting the forehead back and lifting the chin; not used for trauma patients}
+	}
+
+	\newglossaryentry{hypercarbia}
+	{
+		name=hypercarbia,
+		description={increased level of carbon dioxide (\ensuremath{\mathrm{CO_2}}) in the bloodstream}
+	}
+
+	\newglossaryentry{hyperventilation}
+	{
+		name=hyperventilation,
+		description={ Rapid or deep breathing that lowers the blood carbon dioxide (\ensuremath{\mathrm{CO_2}})  level below normal}
+	}
+
+	% hypotension defined in ch09
+
+	\newglossaryentry{hypoxia}
+	{
+		name=hypoxia,
+		description={a dangerous condition in which the body's tissues and cells do not have enough oxygen}
+	}
+
+	\newglossaryentry{impedance_threshold_device}
+	{
+		name=\acrfull{itd},
+		description={a valve device placed between the endotracheal tube and a bag-valve mask that limits the amount of air entering the lungs during the recoil phase between chest compressions}
+	}
+
+	\newglossaryentry{intrathoracic}
+	{
+		name=intrathoracic,
+		description={within the chest (thoracic) cavity}
+	}
+
+	\newglossaryentry{ischemia}
+	{
+		name=ischemia,
+		description={decreased oxygen supply}
+	}
+
+	\newglossaryentry{jaw_thrust_maneuver}
+	{
+		name=jaw-thrust maneuver,
+		description={technique to open the airway by placing the fingers behind the angle of the jaw and bringing the jaw forward; use for patients who may have a cervical spine injury}
+	}
+
+	\newglossaryentry{load_distributing_band}
+	{
+		name=\acrfull{ldb},
+		description={circumferential chest compression device composed of a constricting band and backboard that is either electrically or pneumatically driven to compress the heart by putting inward pressure on the thorax}
+	}
+
+	\newglossaryentry{opiate}
+	{
+		name=opiate,
+		description={A subset of the opiod family, referring to natural, non-synthetic opioids}
+	}
+
+	\newglossaryentry{opioid}
+	{
+		name=opiod,
+		description={A synthetically-produced narcotic medication, drug, or agent similar to the opiate morphine, but not derived from opium.  Used to relieve pain}
+	}
+
+	\newglossaryentry{pacemaker}
+	{
+		name=pacemaker,
+		description={a medical device that delivers shocks directly to the heart if necessary.\newline Also called an \acrfull{aicd}}
+	}
+
+	\newglossaryentry{stoma}
+	{
+		name=stoma,
+		description={an opening through the skin and into an organ or other structure}
+	}
+
+	\newglossaryentry{tachycardia}
+	{
+		name=tachycardia,
+		description={rapid heart rate ($>$ 100 beats/minute)}
+	}
+
+	\newglossaryentry{ventricular_defibrillation}
+	{
+		name=\acrfull{vfib},
+		description={disorganized, ineffective quivering of the ventricles, resulting in no blood flow and a state of cardiac arrest}
+	}
+
+	\newglossaryentry{ventricular_tachycardia}
+	{
+		name=\acrfull{vtac},
+		description={rapid heart rhythm in which the elctrical impulse begins in the ventricle (instead of the atrium), which may result in inadequate blood flow and eventually deteriorate into cardiac arrest}
+	}
+
+	\newglossaryentry{xiphoid_process}
+	{
+		name=xiphoid process,
+		description={cartilaginous section at the lower end of the sternum}
+	}
+
+\chapter{\acrshort{bls} Resuscitation}
+
+\subsection*{Abbreviations}
+\begin{description}[leftmargin=!,labelwidth=\widthof{\bfseries ABCDE}]
+	\item [\acrshort{abc}] 			\acrlong{abc}
+	\item [\acrshort{aed}] 			\acrlong{aed}
+	\item [\acrshort{aha}] 			\acrlong{aha}
+	\item [\acrshort{aicd}] 		\acrlong{aicd}
+	\item [\acrshort{als}] 			\acrlong{als}
+	\item [\acrshort{bls}] 			\acrlong{bls}
+	\item [\acrshort{bvm}] 			\acrlong{bvm}
+	\item [\acrshort{cpr}] 			\acrlong{cpr}
+	\item [\acrshort{itd}] 			\acrlong{itd}
+	\item [\acrshort{iv}] 			\acrlong{iv}		% ch11
+	\item [\acrshort{ldb}] 			\acrlong{ldb}
+	\item [\acrshort{rosc}] 		\acrlong{rosc}
+	\item [\acrshort{sca}] 			\acrlong{sca}
+	\item [\acrshort{vfib}] 		\acrlong{vfib}
+	\item [\acrshort{vtac}] 		\acrlong{vtac}
+\end{description}
+
+\subsection*{Definitions}
+\begin{description}
+	\item [\gls{active_compression_decompression_CPR}] 	\glsdesc{active_compression_decompression_CPR}
+	\item [\gls{atrial_fibrillation}] 					\glsdesc{atrial_fibrillation}
+	\item [\gls{automated_external_defibrillator}] 		\glsdesc{automated_external_defibrillator}
+	\item [\gls{anoxia}] 								\glsdesc{anoxia}
+	\item [\gls{aortocaval_compression}] 				\glsdesc{aortocaval_compression}
+	\item [\gls{apneic}] 								\glsdesc{apneic}
+	\item [\gls{automated_implanted_cardioverter_defibrillator}] 	\glsdesc{automated_implanted_cardioverter_defibrillator}
+	\item [\gls{basic_life_support}] 					\glsdesc{basic_life_support}
+	\item [\gls{cardiopulmonary_resuscitation}] 		\glsdesc{cardiopulmonary_resuscitation}
+	\item [\gls{cyanosis}] 								\glsdesc{cyanosis}
+	\item [\gls{diaphoretic}] 							\glsdesc{diaphoretic}
+	\item [\gls{dyspnea}] 								\glsdesc{dyspnea}
+	\item [\gls{fundus}] 								\glsdesc{fundus}
+	\item [\gls{gastric_distention}] 					\glsdesc{gastric_distention}
+	\item [\gls{head_tilt_chin_lift_maneuver}] 			\glsdesc{head_tilt_chin_lift_maneuver}
+	\item [\gls{hypercarbia}] 							\glsdesc{hypercarbia}
+	\item [\gls{hyperventilation}] 						\glsdesc{hyperventilation}
+	\item [\gls{hypotension}] 							\glsdesc{hypotension}
+	\item [\gls{hypoxia}] 								\glsdesc{hypoxia}
+	\item [\gls{impedance_threshold_device}] 			\glsdesc{impedance_threshold_device}
+	\item [\gls{intrathoracic}]							\glsdesc{intrathoracic}
+	\item [\gls{ischemia}] 								\glsdesc{ischemia}
+	\item [\gls{jaw_thrust_maneuver}] 					\glsdesc{jaw_thrust_maneuver}
+	\item [\gls{load_distributing_band}] 				\glsdesc{load_distributing_band}
+	\item [\gls{opiate}] 								\glsdesc{opiate}
+	\item [\gls{opioid}] 								\glsdesc{opioid}
+	\item [\gls{pacemaker}] 							\glsdesc{pacemaker}
+	\item [\gls{stoma}] 								\glsdesc{stoma}
+	\item [\gls{tachycardia}] 							\glsdesc{tachycardia}
+	\item [\gls{ventricular_defibrillation}] 			\glsdesc{ventricular_defibrillation}
+	\item [\gls{ventricular_tachycardia}] 				\glsdesc{ventricular_tachycardia}
+	\item [\gls{xiphoid_process}] 						\glsdesc{xiphoid_process}
+\end{description}\hfill \\
+\clearpage
+
+\subsection*{Heart terms}
+\begin{description}
+	\item [\gls{atrial_fibrillation}] \glsdesc{atrial_fibrillation}
+	\item [\gls{bradycardia}] \glsdesc{bradycardia}
+	\item [\gls{tachycardia}] \glsdesc{tachycardia}
+	\item [\gls{ventricular_defibrillation}] \glsdesc{ventricular_defibrillation}
+	\item [\gls{ventricular_tachycardia}] \glsdesc{ventricular_tachycardia}
+\end{description}\hfill \\
+
+\section{\acrfull{bls}}
+\acrshort{bls}  is noninvasive, emergency lifesaving care that is used to treat medical conditions, including airway obstruction, respiratory arrest, and cardiac arrest.
+
+\paragraph{\acrshort{bls} sequence} (use ABC mnemonic):
+\begin{description}[leftmargin=!,labelwidth=\widthof{\bfseries respiratory}]
+	\item [airway] (obstruction)
+	\item [breathing] (respiratory arrest)
+	\item [circulation] (cardiac arrest)
+\end{description}
+
+\paragraph{Difference between \acrshort{als} and \acrshort{bls}} \acrshort{als} involves advanced lifesaving procedures such as cardiac monitoring, administration of \acrshort{iv} fluids and medications, and the use of advanced airway adjuncts.
+
+\paragraph{Permanent brain damage} is possible after only 4-6 minutes without oxygen. \newline
+To survive cardiac arrest, effective \underline{\acrshort{cpr}} at an adequate rate and depth with minimal interruptions is essential \underline{until defibrillation can be administered}.\hfill \\
+
+
+\section{\acrshort{bls} Procedures}
+According to the \acrshort{aha} 88\% of sudden cardiac arrests occur in the home 
+
+\subsection{The 'Chain of Survival'}
+\begin{outline}{enumerate}
+	\1 Recognition and activation of the emergency response system
+		\2 Laypeople must recognize the early warning signs of cardiac emergency to call 9-1-1
+		\2 Requires public education and awareness
+	\1 Immediate high-quality \acrshort{cpr}
+	\1 Rapid defibrillation 
+		\2 \acrshort{aed} must be used as soon as it is available \textit{without stopping chest compressions}
+	\1 basic and advanced emergency medical services
+		\2 \acrshort{als}: high-quality \acrshort{cpr}, early defibrillation, and use of devices and/or drugs.
+	\1 Advanced life support and post arrest care
+		\2 comprehensive, multidisciplinary system of care including mild therapeutic hypothermia and other treatments
+\end{outline}
+
+\subsection{\acrshort{cpr} steps}
+\begin{enumerate}
+	\item Restore circulation by performing chest compressions to circulate blood.
+	\item 100-120 chest compressions per minute for 2 minutes
+	\begin{itemize}
+		\item Depth of 2 inches to 2.4 inches (5 - 6cm)
+		\item Open airway with the \underline{jaw-thrust} or \underline{head tilt-chin lift} maneuver
+	\end{itemize}
+	\item Restore breathing by providing rescue breaths via mouth-to-mask ventilation, or bag-valve mask (BVM) minister
+	\begin{itemize}
+		\item 2 breaths over 1 second while watching for chest rise.
+	\end{itemize}
+\end{enumerate}
+
+\subsection{Differences in providing \acrshort{cpr} for infants, children and adults}
+\begin{enumerate}
+	 \item \acrshort{cpr} emergencies for infants and children require \acrshort{cpr} usually have different underlying causes
+	 \item Anatomical differences: children and infants have smaller airways than adults
+\end{enumerate}
+
+\begin{description}[leftmargin=!,labelwidth=\widthof{\bfseries Children and infants}]
+	\item [Adults:] usu. cardiac arrest \textrightarrow  respiratory arrest
+	\item [Children \& infants:] usu. respiratory arrest \textrightarrow  respiratory arrest
+\end{description}
+
+\subparagraph{Complications from chest compressions} are rare but can include fractured ribs lacerated liver and a fractured sternum.\hfill \\
+
+
+\section{Assessing the Need for BLS}
+\subsection{When not to start \acrshort{cpr}}
+\begin{enumerate}
+	\item If the scene is unsafe
+	\item If the patient has obvious signs of death (obv. mortal damage, dependent lividity, rigor mortis, putrefaction)
+	\item If the patient/their physician has DNR or no \acrshort{cpr} order
+\end{enumerate}
+
+\subsection{Special \acrshort{aed} situations}
+\subsubsection{automated implanted cardioverter-defibrillator (AICD)} 
+Automated implanted cardioverter-defibrillators (AICD), commonly known as \textbf{pacemakers}, deliver shocks directly to the heart if necessary 
+\paragraph{Identifying AICDs} AICDs create a hard lump beneath the skin on the \underline{upper-left side} of the chest (just below the clavicle)
+\paragraph{\acrshort{aed} usage with \acrshort{aicd}s} 
+\begin{itemize}
+	\item[] \underline{Do not} pads directly over the device: this reduces effectiveness of \acrshort{aed} shock.
+	\item Place \acrshort{aed} pads at least \underline{1 inch (2.5 cm) away} from the device.
+	\item Occasionally, implanted device will deliver shocks to the patient 
+	\begin{itemize} 
+		\item If you observe the patient's \textbf{muscles twitching}: \newline
+		\underline{continue \acrshort{cpr}} and wait \underline{30 -- 60 seconds before} delivering the shock from the \acrshort{aed}.
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{Patient's chest is wet}
+If patient's chest is wet, the electrical current may move across the skin rather than between the pads.
+\paragraph{Patient is submerged in water} 
+\begin{enumerate}
+	\item Pull patient out of the water
+	\item Quickly dry skin \underline{before attaching} \acrshort{aed} pads 
+	\item Do \textbf{not} delay \acrshort{cpr} to dry the patient thoroughly
+	\begin{itemize}
+		\item instead, quickly wipe off as much moisture as possible from the chest
+	\end{itemize}
+\end{enumerate}
+
+\paragraph{Patient lying in small puddle of water or snow}
+\begin{itemize}
+	\item \acrshort{aed} can be used but again the patient's chest should be quickly dried as much as possible
+\end{itemize}
+
+\subsubsection{transdermal medication} patches you may encounter patient who is receiving medication through transdermal medication patch such as nitroglycerin if the medication patch interferes with \acrshort{aed} pad placement them remove the patch with your gloved hands and wiped the skin to remove any residue prior to attaching the \acrshort{aed} pad
+
+\section{Devices and Techniques to Assist Circulation}
+\subsection{active compression-decompression \acrshort{cpr}} 
+Technique that involves compressing the chest and then actively pulling it back up to its neutral position and beyond.
+May increase the amount of blood that returns to the heart and thus the amount of blood ejected from the heart during the compression phase
+\subsection{impedance threshold device (IPD)}
+Valve device placed between the ET tube and it BVM
+may also be placed between the bag and mask if an ET tube is not in place
+limits air entering the lungs during the \emph{recoil phase} between chest compressions
+Results in \emph{negative} intrathoracic pressure that may draw more blood towards the heart ultimately resulting in improved cardiac filling and circulation.
+it is not currently recommended for use with conventional \acrshort{cpr}
+if our OSC occurs than the IPD should be removed
+\subsection{mechanical piston device} device that depresses the sternum via plunger mounted on a backboard.
+\paragraph{Positioning} supine on backboard \newline plunger centered over the patient's thorax (same place hands would go).
+
+\subsection{LVAD}
+The effectiveness of \acrshort{cpr} depends on the amount of blood circulated throughout the body as a result of chest compressions
+before you consider the use of mechanical devices to assist circulation ensure that your manual chest compressions her concerns distantly high quality
+
+\section{Special resuscitation circumstances} 
+\subsection{Opioid overdose}
+Narcotic that when taken in excess depresses the central nervous system causes respiratory arrest followed by cardiac arrest.
+\paragraph{Naloxone} Chest compressions ventilation defibrillation take priority over naloxone 
+administration do not delay other interventions while awaiting the patient's response to naloxone therapy 
+May have a \textbf{pulse} but \textbf{not breathing}: BVM ventilation \emph{is the most critical treatment}, followed by naloxone (if available). \newline
+\subsection{Pregnancy \& cardiac arrest}
+\paragraph{Priority} provide high-quality \acrshort{cpr}.  Relieve pressure off the \emph{aorta} and \emph{vena cava}.
+When patient lies supine, the pregnant uterus can \emph{compress the aorta and vena cava (aortocaval compression)} \newline 
+If pregnant patient is \textbf{not} in cardiac arrest: position her on the \textbf{left side} to relieve pressure on the vessels aorta and vena cava. \newline
+
+If she is in cardiac arrest, this is impractical.
+because she must remain in the supine position to maximize effectiveness of compressions therefore if the top the patient's uterus (fundus) 
+can be felt at or above the level of the umbilicus  perform manual displacement of the uterus to the patient's left to relieve aorta painful compression while \acrshort{cpr} is being performed 
+
+Whenever you assist the patient remember that his or in some patient apps that in some cases family members may experience a psychological crisis that turns to medical crisis and may become patients themselves 
+
+\begin{table}[ht]
+	\centering
+	\caption{Review of BLS procedures}
+	
+	\bgroup
+	\def\arraystretch{1.25}%
+	\begin{tabular}{|p{3cm}|p{4cm}|p{4cm}|p{4cm}|}
+		\hline
+		\bfseries Procedure						 & \bfseries Adult                                        & \textbf{Child} \newline \small {Age 1 month -- 1 year} 					   			
+																																						    &  \textbf{Infant} \newline \small {Age 1 year -- onset of \newline puberty} \\ \hline \hline
+		\multicolumn{4}{l}{\bfseries Circulation} \\ \hline
+		pulse check                              & carotid artery                                         & carotid or femoral artery 		   				& brachial artery \\ \hline
+		compression area                         & center of the chest, in between the nipples     		  & center of the chest, in between the nipples 	& just below the nipple line \\ \hline
+		compression width						 & heel of both hands									  & heel of one or both hands 						& Two-finger technique, \newline or two-thumb encircling \newline-hands technique \\ \hline
+		compression depth                        & 2 -- 2.4 in. \newline (5 -- 6 cm)                      & at least \( \frac{1}{3} \) anterior-posterior diameter \newline (\textasciitilde 2 in. or 5cm) 
+																																							& At least \( \frac{1}{3} \) anterior-posterior diameter \newline (\textasciitilde 1.5 in. or 4 cm) \\ \hline
+		compression rate                         & \multicolumn{3}{c|}{100 to 120/min} \\ \hline
+		compression-to-ventilation ratio*        & \multicolumn{3}{c|}{10:1}  \\ \hline
+		Foreign body \newline obstruction        & \textbf{Responsive:} \newline abdominal thrusts (Heimlich); \newline chest thrust if the \newline patient is pregnant or has obesity \newline  \textbf{Unresponsive}: \acrshort{cpr} 
+																	 									  & \textbf{Responsive:} \newline abdominal thrusts (Heimlich) \newline \newline \newline \newline \textbf{Unresponsive:} \acrshort{cpr}
+																	 									   										 			& \textbf{Responsive:} \newline back slaps, chest thrusts \newline \newline \newline \newline \newline \textbf{Unresponsive:} \acrshort{cpr} \\ \hline
+		\multicolumn{4}{l|}{\bfseries Airway} \\ \hline
+		airway \newline positioning 			 & \multicolumn{3}{c|}{head tilt-chin lift\texttt{;} \newline jaw-thrust if spinal injury suspected} \\ \hline
+		\multicolumn{4}{l}{\bfseries Breathing} \\ \hline
+		ventilations                             & 1 breath every 5 -- 6 sec. (10 -- 12 breaths/min); \newline \textasciitilde 1 second per breath; \newline visible chest rise
+																										  & 1 breath every 3--5 seconds \newline (12 to 20) breaths/min; \newline \textasciitilde 1 second per breath; \newline visible chest rise
+																																			 	 & 1 breath every 3--5 seconds \newline (12 to 20) breaths/min; \newline \textasciitilde 1 second per breath; \newline visible chest rise \\ \hline
+		ventilations (with advanced airway placed) & 1 breath every 6 seconds (rate of 10 breaths/min)      & 1 breath every 6 seconds (rate of 10 breaths/min) 
+																																				 & 1 breath every 6 seconds (rate of 10 breaths/min) \\ \hline
+	\end{tabular}
+	\egroup
+\end{table}\hfill \\
+\clearpage
+
+\subsection{Potential Test Questions}
+\begin{enumerate}
+	\item How does BLS differ from \acrshort{als}? \hfill \\
+	\acrshort{als} involves advanced lifesaving procedures such as cardiac monitoring, administration of  IV fluids and medications, and the use of advanced airway adjuncts.
+	\item What is the difference between hypoxia and ischemia? \hfill \\
+	Hypoxia is when oxygen saturation is below 90\%, while ischemia is when blood supply to tissue is interrupted. \newline
+	ischemia leads to hypoxia.
+	\item What conditions must be present for a patient to be placed into the recovery position? 
+	Unconscious, no traumatic injuries, breathing on their own.\hfill \\
+	\item Under what circumstances does an \acrshort{emt} \textbf{not} start \acrshort{cpr}?
+	\begin{itemize}
+		\item If the scene is unsafe
+		\item If the patient has obvious signs of death (obv. mortal damage, dependent lividity, rigor mortis, putrefaction)
+		\item If the patient/their physician has DNR or no \acrshort{cpr} order
+	\end{itemize}\hfill \\
+\end{enumerate}
+
+
+\begin{comment}
+\paragraph{Special circumstances}
+\begin{enumerate}
+\item Determine unresponsiveness:
+\begin{description}[leftmargin=!,labelwidth=\widthof{\bfseries respiratory}]
+\item [adults] Gently tap the patient on the shoulder, shout, "Are you okay?"
+\item [infants] (respiratory arrest)
+\item [children] (cardiac arrest)
+\end{description}
+\end{enumerate} \hfill\\
+
+One recognition and activation of the emergency response system the first step in the chain of survival requires
+immediate high-quality CPR the initiation of immediate CPR by bystanders essential for successful resuscitation of a person cardiac arrest
+three rapid defibrillation provided that immediate high-quality CPR with minimum interruptions is performed early defibrillation offers the best opportunity to achieve a successful patient outcome
+four basic and advanced emergency medical services this link in the chain describes care by EMTs and ALS providers before the patient arrives at the ED such care includes continuing high-quality CPR basic airway management such as oral airway insertion and BVM ventilation advanced airway management endotracheal intubation or use of supper logic airway devices many will defibrillation vascular access transcutaneous pacing and administration of medications
+five advanced life support and postarrest care after team delivers the patient to the emergency room further cardiopulmonary and neurologic support is provided to improve the patient's recovery when indicated this support can include additional medication therapy to support blood pressure
+
+the first step is to determine unresponsiveness gently tap the patient on the shoulder and shouted are you okay
+continue your assessment by simultaneously checking for breathing in the pulse the step should take no more than 10 seconds
+if the patients in cardiac arrest they begin CPR immediately
+the basic principles of BLS are the same for infants children and adults
+for the purposes of BLS anyone younger than one year is considered an infant
+a child is between one year of age and the onset of puberty approximately 12 to 14 years of age as signified by breast development in girls and underarm chest and facial hair and boys
+some small children made best be treated as infants some larger children as adults
+
+Most prehospital cardiac arrests occur as the result of a sudden cardiac rhythm disturbance is arrhythmia such as ventricular fibrillation V. fib or pulseless in curricular tachycardia VTEC
+the normal heart rhythm is known
+as normal sinus rhythm V. fib is the disorganized quivering of the ventricles
+resulting in no forward blood flow in the state of cardiac arrest VTEC is a rapid contraction of the ventricles that this not allow for normal filling of the heart AEDs can beasts safely used in children using the pediatric sized pads and a dose attenuating system energy reducer
+however if these items are unavailable use adult sized AED pads apply the AED to infants or children after the first five cycles of CPR have been completed recall that cardiac arrest in children is usually the result of respiratory failure therefore oxygenation ventilation are vitally important after the first five cycles CPR using AED to deliver shocks in the same manner as with them adult patient
+
+If the patient is an infant between one month and one year of age the manual defibrillators preferred to an AED however this is an ALS school if you use adult sized AED pads on an infant or small child and do not cut the pads to adjust the size
+
+Positioning the patient for CPR to be effective the patient must be lying supine on a firm flat surface with enough clear space around the patient for two rescuers to perform CPR and use the AED
+the patient is crumpled up her lying face down then you will need to move him or her to a supine position
+be mindful that you cannot rule out a spinal injury and an unresponsive patient therefore protect the patient's neck and move her or him as a unit without twisting the patient's on the bed the move him or her to the floor if possible log roll the patient onto a long backboard as you position him or her for CPR do this as quickly and safely as possible a backboard will provide support during transport and emergency care
+
+Checking for breathing and a pulse after you have determined that the patient is unresponsive quickly check for breathing and a pulse should take no longer than 10 seconds in total
+visualize this chest for signs of breathing while palpating for a cardioid pulse feel for the cardio artery by locating the larynx at the front of the neck and sliding two fingers towards one side the side closest to you
+
+If the patient is not breathing or is breathing only slowly or occasionally known as agate
+and does not have a pulse to begin CPR starting with chest compressions depression squeeze the heart thereby act acting as of pump to circulate blood
+
+1.	 take standard precautions 
+2.	waste the heel of one hand on the center of the chest over the lower half of the sternum
+3.	place the heel of your other hand over the first hand for with your arm straight lock your elbows and position your shoulders directly over your hand so that the thrust of each compression is straight down on the sternum
+5. Depress the sternum to a depth of 2 inches to 2.4 inches 5 cm to 6 cm using direct downward movement and then rising gently upwards
+the ratio of time devoted to compression versus relaxation should be 1 to 1
+
+
+Your motions must be smooth rhythmic and uninterrupted short jabbing compressions are not effective in producing artificial blood flow
+
+Chest compressions create blood flow to the heart through filling of the coronary arteries
+it takes 5 to 10 compressions to reestablish effective blood flow to the heart after chest compressions her resume
+opening the airway in adults the two techniques for opening the airway in adults with a head tilt chin lift maneuver in the jaw thrust maneuver
+these manual maneuvers are designed to bring the tongue forward and off the back of the throat
+
+The head tilt chin lift maneuver is effective for opening the airway and most patients with there is no indication of a spinal injury
+
+The patient is any foreign material or vomitus in the mouth and quickly remove it remove any liquid materials from the mouth with the suction device use your hooked finger to remove any solid material
+
+If spinal injury suspected that use the jaw thrust maneuver do not tilt the patient's head back because you want to minimize the movement of the patient's neck to perform a jaw thrust maneuver place your fingers behind the angles of the patient's lower jaw and then move the jaw upward
+keep the head in a neutral position as you move the jaw upward to close the mouth
+
+If the jaw thrust fails to open airway than that head tilt chin lift should be used to open the airway
+
+Recovery position if the patient is breathing adequately on his or her own and is no signs of injury to the spine or pelvis or hip and place him or her in the recovery position this position helps to maintain a clear airway in the patient with a decreased level of consciousness who is not sustained traumatic injuries and is breathing adequately on his or her own it also allows vomitus to drain from the mouth
+roll the patient onto his or her sides that the head shoulders and torso move as a unit without twisting them placed the top hand under his or her cheek never place a patient who has a suspected head injury spinal injury in their current position because of this position the spine is not aligned spinal stabilization is not possible and further spinal injury could result
+
+A lack of oxygen hypoxia combined with too much carbon dioxide in the blood hypercardia via is lethal to correct this condition you must provide slow deliberate ventilations that last one second this gentle slow method of ventilating the patient prevents the air from being forced into the stomach
+
+Ventilations can be given by one or two EMS providers use a barrier device know yet he devices with an oxygen reservoir will provide higher percentages of oxygen to the patient regardless of whether you ventilate the patient with or without supplemental oxygen you should observe the chest for pop
+visible rise to assess the effectiveness of your ventilations
+hyperventilation may cause increased intra-thoracic pressure pressure inside the chest cavity
+increased intrathoracic pressure reduces the amount of blood that returns to the heart thus decreasing the effectiveness of chest compressions are resulting in the heart and brain receiving decreased amounts of oxygen
+
+Stoma ventilation
+patients who have undergone old layering ectomy surgical removal of the larynx often have a permanent tracheal stoma in the midline of the neck in this case system is an opening that connects the trachea directly to the skin
+
+Because it is at the midline the stoma is the only opening that will move air into the patient's lungs patients with a stoma should be ventilated with the BVM or pocket mask device placed directly over the stoma
+
+
+Not all stoma's are disconnected from the nose and mouth if air leakage through the nose and mouth the interferes with ventilation through the stoma than cover the nose and mouth with your hand to make a seal
+use a pediatric or infant master ventilate through the stoma
+
+Ventilation is the physical act of moving air in and out of the lungs
+ventilation is required for adequate respiration
+examples of conditions that hinder ventilation include trauma such as flail chest foreign body airway obstruction and an injury to the spinal cord that disrupts the phrenic nerve that innervates the diaphragm.
+
+Gastric distention
+artificial ventilation may result in the stomach becoming filled with air
+a condition called gastric distention
+although it occurs more easily in children this condition also happens frequently in adults gastric distention is likely to occur if you hyperventilate the patient
+you ventilate to forcefully of the patient's airway is not opened adequately in the excess gas opens up in the collapsible to the esophagus and allows gas to enter the stomach if massive gastric distention interferes with adequate ventilation and contact medical control
+check the airway again and reposition the patient watch for the rise and fall of the chest and avoid getting forceful breaths having a suction unit available case the patient vomits remember mortality increases significantly if aspiration occurs
+if an ALS providers available than he or she can insert on borrow gastric or nasogastric tube to decompress the stomach
+
+Two rescuer adult CPR two rescuer CPR is always preferable because it is less tiring and it facilitates effective chest compressions in fact the team approached the CPR and AED uses far superior to the one rescuer approach
+take standard precautions establish unresponsiveness while your partner moves to the patient side to be ready to deliver chest compressions
+two if the patient is unresponsive that simultaneously check for breathing and palpate for
+if the patient is unresponsive that simultaneously check for breathing and palpate for a carotid pulse take no more than 10 seconds to do this three if the patient is not breathing and has no pulse to begin CPR study with chest compressions give 30 chest compressions at a rate of 100 220 per minute
+Vinay D is available than apply it and follow its voice prompts do not interrupt chest compressions to apply the a
+pads
+for open airway according to your suspicion of spinal injury five give two ventilations of one second each
+observer visible chest rise six perform five cycles of 30 compressions in two ventilations
+this should take about two minutes
+after two minutes of CPR the compressor ventilator should switch positions the switch time should take no longer than five seconds reanalyze the patient's
+cardiac rhythm with the AED every two minutes and deliver a shock if indicated continue cycles of 30 chest compressions a two ventilations until ALS providers take over the patient starts to move
+
+When CPR is in progress on the patient who has an advanced airway device in place i.e. ET tube King LT super aquatic airway I gel super aquatic airway cycles of CPR not indicated compression should be at the continuous rate of 100 220 per minute and ventilation should occur at a rate of one breath every six seconds do not attempt to synchronize compressions and ventilations do not pause between compressions to deliver breaths
+
+Switching positions is critical to switch rescuers during CPR to maintain high quality compressions
+
+DL VAD is a mechanical pump that is implanted in the chest and helps pump blood from the left ventricle to the aorta a tube from the device passes through the skin and is attached to an external power source that the patient wears on their belt
+over the shoulder harness the L VAD is commonly implanted in patients with severe heart failure are those who are awaiting a heart transplant
+the if the L VAD is working that you will hear a humming sound when listening to the chest with a stethoscope
+blood throws that blood flows continuously through the L VAD and more assistance the L VAD is providing to the heart the weaker the patient's pulse will be
+you should know the location of L VAD patients in your service area
+L VAD coordinators are usually available for consult 24 hours a day these medical professionals typically work at the same facility that placed the device so they should also be familiar with the patient failure local protocols or contact medical control regarding the treatment of a patient with an L VAD
+
+
+Infant and child CPR cardiac arrest in infants and children follows respiratory arrest which triggers hypoxia and ischemia decreased oxygen supply of the heart
+children consume oxygen to the three times as rapidly as adults
+
+So you must first focus on opening the airway and providing artificial ventilation
+often this will be enough to allow the child to resume spontaneous breathing and thus prevent cardiac arrest airway and breathing are the focus of pediatric BLS
+
+As discussed in chapter 34 pediatric emergencies respiratory issues leading to cardiopulmonary arrest in children have a number of different causes including
+injury both blunt and penetrating infections of the respiratory tract and or another organ system group epiglottis epiglottis
+
+A foreign body in the airway
+submersion drowning electrocution
+
+Poisoning or drug overdose sudden infant death syndrome
+SIDS
+determining responsiveness never shake a child to determine whether or not he or she is responsive especially at the possibility of a neck or back injury exists instead simply gently tap the child on the shoulder and say loudly are you okay
+with an infant gently tap the soles of their feet
+if a child is responsive but struggling to breathe and allow him or her to remain in whatever position is most comfortable
+if you find an unresponsive apnea and pulseless child why you are alone and off duty and you did not witness the child's collapse form CPR begin with chest compressions for approximately five cycles about two minutes and do not and then stopped to call 911 and retrieve and AED do not call 911 right away as you would with an adult remember that cardiopulmonary arrest in children to smoke most often the result of respiratory failure and not a primary cardiac event
+therefore children will require immediate restoration of oxygen ventilation and circulation which can be accomplished by immediately performing five cycles about two minutes of CPR before activating the EMS system
+may encounter child whose cardiac arrest was caused by a primary cardiac event rather than the respiratory problem
+although it is rare and otherwise healthy child without apparent respiratory condition suddenly collapses and you witness it then first confirm that the child is in cardiac arrest
+if you are alone without a mobile phone and leave the
+child to call 911 and get an AED before beginning CPR if you are not alone and send someone to call 911 and getting a DUI you begin CPR
+the sun collapse of an otherwise healthy child does not indicate a respiratory problem instead it suggest a primary cardiac event that may responsive defibrillation therefore it is critical to get the A/D to the child side as soon as possible
+
+After you establish responsiveness you need to assess breathing and circulation as with an adult this assessment can occur simultaneously and should take no longer than 10 seconds visualize the chest for signs of breathing and palpate for a pulse in a large central artery
+
+You can usually palpate the carotid or for moral artery in children older than one year but it is difficult in infants and infants palpate the brachial artery which is located on the inner side of the arm
+midway between the elbow and shoulder
+place your thumb on the outer surface of the arm between the elbow and shoulder then placed the tips of your index and middle fingers on the inside of the biceps and press lightly on the bone toward the bone
+CPR will be required if the infant or child is not breathing there is not breathing normally act in all gasps and the pulses absent or less than 60 beats a minute
+as with an adult and infant or child must be lying on a hard flat surface for effective chest compressions
+
+If you need to carry and fit while providing CPR than your forearm and hand can service the flat surface use your Palm to support the infant's head
+the liver
+is relatively large and fragile especially in infants
+the spleen on the left is smaller and more fragile in children than in adults these organs are easily injured if you are not careful in performing chest compressions to be sure your hand position is correct before you begin
+the chest of an infant is smaller more pliable than that of an older child or adult therefore you should only use two fingers to compress the chest
+if two rescuers are performing CPR on an infant used it to thumb encircling hands technique to deliver the chest compressions in children especially those older than eight years you can use the heel of one or both hands to compress the chest
+
+follow these steps to perform infant chest compressions:
+1 Take Standard Precautions Pl. the infant on a firm surface using one hand to keep the head in an open airway position you can also use a patter wedge under the shoulders and upper body to keep the head from tilting forward
+two
+imagine a line drawn between the nipples placed two fingers in the middle of the sternum just below the nipple line 3 using two fingers compress the sternum at least one third of the anterior posterior diameter of the chest approximately 1.5
+inches or 4 cm in most infants compress the chest at a rate of 100 to 120 per minute after each compression allow the sternum to return briefly to its normal position allow equal time for compression and relaxation of the chest not remove your fingers from the sternum and avoid jerky movements
+
+Coordinate compressions and ventilations in the 30 to 2 ratio if you're working alone and 15 to 2 if you're working with a trained bystander another healthcare provider ensure the infant's chest fully recoils in between compressions and that the chest visibly rises with each compression you will find this easier to do if you use your free hand to keep the head in the open airway position
+if the chest does not rise or rises only little then use the head tilt chin lift to open the airway reassess the infant for signs of spontaneous breathing or pulse after five cycles about two minutes of CPR
+
+
+
+Shows the steps for performing CPR in children between one year of age and the onset of puberty 
+one take standard precautions to place the child on a firm surface
+place the heel of one or two hands in the center of the chest in between the nipples avoid compression over the lower tip of the sternum which is called the xiphoid process.
+Two compress the chest at least one third of the anterior posterior diameter of the chest parenthesis approximately 2 inches 5 cm in most children parenthesis at a rate of 100 to 120 per minute with pauses for ventilation the actual number of compressions delivered will be about 80 per minute in between compressions allow the chest to fully recoil do not lean on the chest compression relaxation time should be the same duration using smooth movements use smooth movements hold your fingers off the child's ribs and keep the heel of your hands on the sternum for
+four coordinate compressions and ventilations in the 30 to 2 ratio for one rescuer and 15 to 2 for two rescuers making sure the chest rises with each ventilation at the end of each cycle positive for two ventila 5:05 cycles about two minutes reassess for a pulse if there is no pulse and you have an AED continue CPR and apply the AED pads 
+six if the child regains a pulse of greater than 60 bpm and resumes effective breathing place him or her in a position that allows for frequent reassessment of the airway and vital signs during transport 
+
+Switching rescuer positions is the same for children as it is for adults every five cycles to minutes of CPR 
+member if the child is passed onset of puberty use an adult CPR sequence including the use of an AED 
+airway infants and toddlers often put toys and other objects as well as food in their mouth therefore foreign body obstruction of the upper airways common 
+you must make sure the upper airways open when managing pediatric respiratory emergencies or cardiopulmonary arrest 
+if the child is unresponsive in line in the supine position than the airway may become obstructed when the tongue and throat muscles relax in the tongue falls backward 
+
+
+If child is unresponsive but breathing adequately to place him or her in the recovery position to maintain open airway and a large range of saliva vomitus or other secretions from the mouth 
+do not use this position if you suspect an injury to the spine hips and pelvis unless you can secure the child to a backboard that can be tilted to the side the childish response in breathing but in a labored fashion to provide prompt transport to the closest appropriate hospital 
+
+Opening the airway in an infant or child is done by using the same techniques as used for an adult however because the child's neck is so flexible the technique should be lightly however because a child's neck is so flexible the technique should be slightly modified the jaw thrust maneuver is the best method to use if you suspect a spinal injury in a child the second rescuers present here she should immobilized a child's cervical spine for spinal injury is not suspected then use the head tilt chin lift maneuver but modified so that just as you tilt the head back you are moving it only in the neutral position or a slightly extended position do not overextend the neck 
+
+Head tilt chin lift maneuver
+perform the head tilt chin lift maneuver in a child in the following manner
+one
+place one hand on the child's forehead and tilt the head back gently with the neck slightly extended to place two or three fingers not the thumb of your other hand under the child's chin and lift the jaw upward and outward do not close the mouth or push under the chin either move
+may obstruct rather than open the airway three remove any visible foreign body or vomitus
+
+
+Jaw thrust maneuver perform the jaw thrust maneuver in a child in the following manner place two or three fingers under each side of the angle of the lower jaw lift the jaw upward and outward if the jaw thrust alone does not open the airway in the cervical spine injury is not a consideration than tilt the head slightly if cervical spine
+injury is suspected then use a second rescuer to immobilize the cervical spine
+member that the head of the infant or young child is disproportionately large in comparison with the chest and shoulders as a result when a child is lying flat on his or her back especially on the backboard the head will bend forward hyper flexion
+onto the upper chest this position can partially or completely obstruct the upper airway to avoid this possibility place a wedge of padding under the child's upper chest and shoulders
+
+Provide rescue breathing if the child is not breathing but has pulse than open the airway and deliver one breath every 3 to 5 seconds
+12 to 20 breaths a minute
+the child is not breathing and does not have a pulse and deliver to rescue breaths after every 30s chest compressions 15 chest compressions of two rescuers at present
+each ventilation should last about one second to produce a visible chest rise use the proper size mask and ensure an adequate mask to face seal
+
+
+As infant or small child is breathing then provide prompt transport began a child who is in respiratory distress should be allowed to stay in whatever position is most comfortable children who are unresponsive but breathing with difficulty should be kept in a position it allows you to manage the airflow and provide ventilatory if needed.
+In a child with such tracheostomy tube in the neck remove the mask from the BVM and connect it directly to the tracheostomy tube to ventilate the child the BVM is unavailable a facemask with one-way valve or other barrier device over the tracheostomy site can be used place your hand firmly over the child's mouth and nose to prevent the artificial breaths from leaking out of the upper airway
+
+An injured child with a serious airway or breathing problem is likely to need full-time attention from two EMTs therefore it is important for you to arrange for backup from another unit as soon as possible perhaps even before you arrive on scene
+in such cases you will need a driver and often additional help with patient care
+
+Interrupting CPR
+CPR is a crucial life-saving procedure that provides minimal circulation and ventilation until the patient can receive defibrillation
+ALS treatment and definitive care at the ED no matter how well CPR is performed however it is rarely enough to save a patient's life if ALS is unavailable at the scene you must provide transport based on your local protocols and continue CPR on the way en route to the ED consider requesting a rendezvous with ALS providers if available this will provide ALS care to the patient sooner improving his or her chance for survival however not all EMS systems have ALS support available to them especially in rural settings
+try not to interrupt CPR for more than a few seconds except when absolutely necessary for example if you too impatient up and down stairs
+chest compression fraction is the total percentage of time during the resuscitation attempt in which chest compressions are being performed make every effort to maintain chest compression fraction of at least 60%
+the higher the better the more frequent interruptions and chest compressions the lower the compression fraction will be low compression fractions lead to worse patient outcomes
+
+You may also encounter physician orders for life-sustaining treatment PO LST or medical orders for life-sustaining treatment MOLST
+forms these legal documents describe acceptable interventions for the patient in the form of medical orders and must be signed by an authorized medical provider to be valid
+in all other cases begin CPR on anyone who is in cardiac arrest
+
+When to stop CPR as an EMT you are generally not responsible for making the decision to stop CPR after you begin CPR in the field you must continue until one of the following events occurs the STO P mnenonic
+S the patient starts breathing and has a pulse
+T
+the patient's care is transferred to another provider of equal or higher level training oh you are out of strength or too tired to continue CPR
+P a physician who is present or providing online medical direction assumes responsibility for the patient and directs you to discontinue CPR
+
+
+Out of strength does not merely mean weary rather it means that you are no longer physically able to perform CPR
+in short always continue CPR until the patient's care is transferred to a physician or higher medical authority in the field in some cases your medical director or a designated medical
+control physician may order you to stop CPR on the basis of patient's condition
+patients who do not achieve patients who do not achieve our OSC may be put to natural kidney or liver donors in select situations
+follow your local protocols regarding the care of potential organ donors
+if you choose not to start CPR on a patient cardiac arrest and always comply with your local protocols and provide detailed documentation
+in particular record the physical examination signs that let you decision and reference the protocol that states the signs are reason to not start CPR if special circumstances physically prevent you from making resuscitation attempts then document the scene conditions thoroughly
+
+Foreign body airway obstruction in adults patiently a large foreign body will be aspirated and blocked upper airway and airway obstruction that an airway obstruction may be caused by various factors including relaxation of throat muscles and unresponsive patient vomited to regurgitate stomach contents blood damaged tissue after an injury dentures or foreign body such as food or small objects large objects that are visible but cannot be removed from the airway with suction such as loose dentures large pieces of food or blood clot should be's leapt forward and out with your gloved index finger so she could then be used as needed to keep the airway clear of thinner secretion such as blood from this mucus
+
+An airway obstruction by foreign body in an adult usually occurs during a meal
+in children it usually occurs during mealtime are at play
+
+If the foreign body is not removed quickly then the lungs were use of their oxygen supply and unconsciousness and death will follow manager is based on the severity of the airway obstruction mild airway obstruction patients with a mild partial airway obstruction are still able to exchange adequate amounts of air but still have signs of respiratory distress
+
+Breathing may be noisy however patient usually has strong effective cough
+leave these patients alone your main concern is to prevent a mild airway obstruction from becoming a severe complete airway obstruction abdominal thrusts are not indicated for patients with a mild airway obstruction
+
+Very patient with a mild airway obstruction first encourage him or her to cough or to continue coughing if they are already doing so do not interfere with the patient's own attempts to expel the foreign body instead give supplement auction if needed and provide prompt transport to the emergency department
+
+Closely monitor the patient observe for signs of severe airway obstruction week or absent cough
+increasing levels of consciousness cyanosis
+responsive patient's son severe airway obstruction is usually easy to recognize
+in someone who is eating or is just finished eating person is suddenly unable to speak or cough graphs his or her throats
+
+Turn cyanotic and makes exaggerated efforts to breathe either air is not moving in to and out of the airway or the air movement is so slight it is not detectable at first the patient will be responsive and be able to clearly indicate the problem as the patient are you choking the patient with you soon
+there's a minimal amount of air movement then you may hear a high-pitched sound called stridor
+this occurs when the object is not fully blocking the airway but small amount of air entering the lungs is not enough to sustain life in the patient will eventually become unconscious if the obstruction is not relieved
+
+
+Unresponsive patients
+when you discover and unresponsive patient your first step is to determine whether he or she or brute is breathing or has a pulse you should suspect in airway obstruction if the standard maneuvers to open the airway and ventilate the lungs are ineffective
+
+If you feel resistance when attempting to ventilate then the patient probably have some type of obstruction
+removing a foreign body airway obstruction in an adult the manual maneuver recommended for removing severe airway risk obstructions and responsive adults and children older than one year is the abdominal thrust maneuver also called the Heimlich maneuver
+the Heimlich technique creates an artificial cough by causing a sudden increase in the intrathoracic pressure when thrusts are applied to this subdiaphragmatic region is a very effective method for removing a foreign body obstruction from the airway
+
+Responsive patients
+
+Abdominal thrust maneuver the goal of the abdominal thrust maneuvers to compress the lungs upward and force residual air from the lungs to flow upward and expelled the object
+in response patients with a severe airway obstruction
+repeat abdominal thrust until the foreign bodies expelled of the patient becomes unresponsive each thrush to be deliberate with the intent of relieving the obstruction to reform abdominal thrust in a responsive adult use the following technique
+
+One stand behind the patient and wrap your arms around his or her abdomen straddle your legs
+outside the patient's legs this will allow you to easily slide the patient to the ground if he or she becomes unresponsive to make a fist with one hand grabbed the fist with the other hand placed the thumb side of the fist against the patient's abdomen just above the umbilicus and well below the xiphoid process
+
+Three press your fist into the patient's abdomen with the quick inward and upward thrust for continue the abdominal thrust until the object is expelled from the airway or the patient becomes
+unresponsive
+chest thrusts you can perform the abdominal thrust maneuver safely on all adults and children however for women in advanced stages of pregnancy and for patients who have
+obesity use chest thrusts instead to perform chest thrusts on the responsive adult use the following technique
+
+
+One stand behind the patient with your arms directly under the patient's armpits and wrap your arms around the patient's chest to
+make a fist with one hand grasp the fist with the other hand placed the thumb side of your fist against the patient's sternum avoiding the xiphoid process and the edges of the rib cage
+three press your fist into the patient's chest with backward thrusts until the object is expelled or the patient becomes unresponsive or if the patient becomes unresponsive then begin CPR study with chest compressions
+
+Responsive patients who become unresponsive
+
+Patient with narrative structure may become unresponsive
+in this case begin CPR starting with chest compressions use the following steps to manage the patient's airway obstruction wine carefully support the patient to the ground and immediately call for help
+or send someone to call for help
+to perform 30 chest compressions using the same landmark as you would for CPR center of the chest between the nipples do not check for a pulse before performing chest compressions
+three open the airway and look in the mouth if he could see an object that can easily be removed and remove it with your fingers and attempt to ventilate if you do not see an object and resume chest compressions
+for repeat steps two and three until the obstruction is relieved of the ALS providers take over
+
+
+If you are able to remove an object from the mouth and attempt to ventilate if ventilation produces chest rise to continue to ventilate and check for a pulse
+
+If a pulse is present but the patient is not breathing the continue rescue breathing and monitor the pulse if a pulse is absent they continue CPR compressions a ventilation
+and apply ADD as soon as it is available
+unresponsive patients when a patient is on unresponsive
+is unlikely you will know what is cause the problem
+begin CPR by determining unresponsiveness and checking for breathing and a pulse
+if a boss is present but breathing is absent then open the airway and attempt to ventilate if the first ventilation does not produce visible chest rise then put position reposition the airway and attempt to ventilate if both ventilation attempts do not produce visible chest rise and perform 30 chest compressions and then open the airway and look in the mouth
+
+If an object is visible and can easily be removed and remove it with your fingers and attempt to ventilate
+never perform blind finger sweeps on any patient doing so may push the obstruction further into the airway for an object is not visible or cannot easily be removed and resume chest compressions
+continue sequence of chest compressions opening the airway and looking inside the mouth until they were is clear ALS providers arrive
+
+Foreign body airway obstruction in infants and children as mentioned previously airway obstruction is a common problem in infants and children usually caused by foreign body such as food or a toy or by an infection
+resulting in swelling and are narrowing of the airway
+try to identify the cause of the instruction as soon as possible patients who have signs and symptoms of airway infection do not waste time trying to dislodge a foreign body administer supplemental oxygen if needed and immediately transport the child to the emergency department
+
+A previously healthy child who's eating or playing with small toys are an infinite was crying about the house and recently has difficulty breathing is probably aspirated a foreign body
+as an adult's foreign bodies may cause a mild or severe airway obstruction with a mild airway obstruction the child can cough forcefully although he or she may wheeze between coughs as long as the patient can breathe coffer talk do not interfere with his or her attempts to expel the foreign body
+
+As with adults encourage the child to continue coughing
+administer supplement oxygen if needed and tolerated and provide transport to the emergency department
+you should intervene only signs for severe airway obstruction develop such as a weak and effective cough cyanosis stridor absent air movement by decreasing level of consciousness
+
+Removing a foreign body airway obstruction in a child 
+responsive child 
+if you determine a child older than one year has in airway obstruction then stand or kneel behind the child and provide abdominal thrusts in the same manner as an adult that use less force until the object is expelled of the child becomes unresponsive the child becomes unresponsive then follow the same steps as for the unresponsive adult to perform the abdominal thrust maneuver in a responsive child who is in the standing or sitting position follow these steps 
+one kneel on one knee behind the child and circle both of your arms around the child's body prepared to give abdominal thrusts by placing your fist just above the patient's on umbilicus and well below the xiphoid processes process place your other hand 
+over that fist to give the child abdominal thrusts in an upward direction 
+avoid applying force to the lower rib cage or sternum 
+three repeat this technique until the child expels the foreign body or becomes unresponsive for if the child becomes unresponsive position the child on a hard surface and immediately call for help or send someone to call for help 
+five perform 30 chest compressions 15 compressions of two rescuers are present using the same landmark as you would for CPR do not check for a pulse before performing chest compressions 
+six open the airway and look inside the mouth he could see an object that can be easily removed and attempt to remove it with your fingers 
+and attempt to ventilate if you do not see an object and resume chest compressions 
+seven repeat steps five and six until the obstruction is relieved or ALS providers take over 
+
+if you managed to clear airway obstruction and unresponsive child but he or she still is no spontaneous breathing air circulation and perform CPR compressions in ventilations and apply the ADD as soon as it is available 
+
+
+Unresponsive child if a child older than one year with airway obstruction becomes unresponsive he or she is managed in the same manner as an adult
+
+The steps for moving a foreign body airway obstruction and unresponsive child:
+
+1 Take Standard Precautions Carefully Pl. the child in the supine position on a firm flat surface  to perform 30 chest compressions 15 compressions of two rescuers are present using the same landmark as you would for CPR 
+lower half of the sternum do not check for a pulse before performing chest compressions 
+three open the airway and look inside the mouth 
+for if you see an object that can be easily removed and remove it with your fingers and attempt to ventilate five if you do not see an object and resume chest compressions six repeat the sequence of chest compressions opening the airway and looking inside the mouth until the obstruction is relieved there ALS providers take over 
+
+
+Removing a foreign body airway obstruction in infants 
+
+Responsive infants 
+do not use abdominal thrusts on a responsive infant with an airway obstruction because of the risk of injury to the immature organs of the abdomen instead perform back slaps and chest thrusts to try to clear severe airway obstruction 
+in a responsive infant as follows 
+one hold the infant face down with the body resting on your forearm support the infants jaw and face 
+with your hand and keep the head lower than the rest of the body to deliver five back slaps between the shoulder blades using the heel of your hand 
+through three place your free hand behind the infants head and back 
+and turn the infant face up on your other forearm and thigh sandwiching the infants body between your two hands and arms the infant's head should remain below the level of the body or give five quick chest 
+thrusts in the same manner and location is chest compressions using twos fingers placed on the lower half of the sternum for longer 
+for larger infants or if you have small hands you can perform the step by placing the infant in your lap and turning the infant's whole body as a unit between back slaps and chest thrusts 
+
+Five check the airway if you can see the foreign body then remove it if not then repeat the cycle as often as necessary six if the infant becomes unresponsive then begin CPR and follow the same sequence as for a child and adult 
+
+Unresponsive infants 
+if the infant becomes unresponsive there your attempts to relieve in airway obstruction to perform CPR study with chest compressions do not check for a pulse before starting compressions 
+open the airway and looking 
+and look in the mouth if you see an object they can easily remove the remove it with your finger and attempt to ventilate you do not see an object and resume chest compressions 
+
+Continue sequence of chest compressions opening the airway and looking inside the mouth until the obstruction is relieved there ALS providers take over 
+
+Whenever you assist the patient remember that his or in some patient apps that in some cases family members may experience a psychological crisis that turns to medical crisis and may become patients themselves 
+\end{comment}
+\end{document}

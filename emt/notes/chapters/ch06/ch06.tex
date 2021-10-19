@@ -1,0 +1,1673 @@
+\documentclass[../../EMT-169.tex]{subfiles}
+
+
+\begin{document}
+\setcounter{chapter}{5}
+\label{ch:chapter6}
+\clearpage
+
+% Glossary acronym entries %
+	\newacronym{ans}{ANS}{autonomic nervous system}
+	\newacronym{atp}{ATP}{adenosine triphospate}
+	\newacronym{bp}{BP}{blood pressure}
+	\newacronym{co}{CO}{cardiac output}
+	\newacronym{csf}{CSF}{cerebrospinal fluid}
+	\newacronym{cns}{cns}{central nervous system}
+	\newacronym{ens}{SNS}{enteric nervous system}
+	\newacronym{hr}{HR}{heart rate}
+	\newacronym{pns}{PNS}{peripheral nervous system}
+	\newacronym{psns}{PSNS}{parasympathetic nervous system}
+	\newacronym{sns}{SNS}{sympathetic nervous system}
+	\newacronym{sv}{SV}{stroke volume}
+	\newacronym{svr}{SVR}{systemic vascular resistance}
+
+% Glossary entries
+	\newglossaryentry{abdomen}
+	{
+		name=abdomen,
+		description={the body cavity that contains the major organs of digestion and excretion. It is located below the diaphragm and above the pelvis}
+	}
+
+	\newglossaryentry{accessory_muscles}
+	{
+		name=accessory muscles,
+		description={the secondary muscles of respiration.  They include the neck muscles (sternocleidomastoids), the chest pecoralis major muscles, and the abdominal muscles}
+	}
+
+	\newglossaryentry{acetabulum}
+	{
+		name=acetabulum,
+		description={depression on the lateral pelvis where the three component bones join, in which the femoral head fits snugly}
+	}
+	
+	\newglossaryentry{adams_apple}
+	{
+		name=Adam's apple,
+		description={a firm prominence of cartilage that forms the upper part of the larynx. It is more prominent in men than in women}
+	}
+
+	\newglossaryentry{adenosine_triphosphate}
+	{
+		name=\acrlong{atp},
+		description={the nucleotide involved in energy metabolism; used to store energy}
+	}
+	
+	\newglossaryentry{adrenal_gland}
+	{
+		name=adrenal gland,
+		description={endocrine gland located on top of each kidney that releases adrenaline when stimulated by the \acrlong{sns}}
+	}
+	
+	\newglossaryentry{adrenaline}
+	{
+		name=adrenaline,
+		description={another name for epinephrine}
+	}
+	
+	\newglossaryentry{adrenergic}
+	{
+		name=adrenergic,
+		description={pertaining to nerves that release the neurotransmitter norepinephrine, or noradrenalin (such as adrenergic nerves, adrenergic response); also pertains to the receptors acted on by norepinephrine}
+	}
+	
+	\newglossaryentry{aerobic_metabolism}
+	{
+		name=aerobic metabolism,
+		description={metabolism the can proceed only in the presence of oxygen}
+	}
+	
+	\newglossaryentry{agonal_gasps}
+	{
+		name=agonal gasps,
+		description={abnormal breathing pattern characterized by slow, gasping breaths, sometimes seen in patients in cardiac arrest}
+	}
+	
+	\newglossaryentry{alpha_adrenergic_receptors}
+	{
+		name=alpha-adrenergic receptors,
+		description={portions of the nervous system that, when stimulated, can cause constriction of the blood vessels}
+	}
+	
+	\newglossaryentry{alveoli}
+	{
+		name=alveoli,
+		description={air sacs of the lungs in which the exchange of oxygen and carbon dioxide takes place}
+	}
+	
+	\newglossaryentry{anaerobic_metabolism}
+	{
+		name=anaerobic metabolism,
+		description={the metabolism that takes place in the absence of oxygen; the main byproduct is lactic acid}
+	}
+	
+	\newglossaryentry{anatomic_position}
+	{
+		name=anatomic position,
+		description={the position of reference in which the patient stands facing forward, arms at the side, with the palms of the hands forward}
+	}
+
+	\newglossaryentry{aorta}
+	{
+		name=aorta,
+		description={the main artery that receives blood from the left ventricle and delivers it to all the other arteries that carry blood to the tissues of the body}
+	}
+
+	\newglossaryentry{appendicular_skeleton}
+	{
+		name=appendicular skeleton,
+		description={the portion of the skeletal system that comprises the arms, legs, pelvis, and shoulder girdle}
+	}
+	
+	\newglossaryentry{appendix}
+	{
+		name=appendix,
+		description={a small, tubular structure that is attached to the lower border of the cecum in the lower right quadrant of the abdomen}
+	}
+
+	\newglossaryentry{arteriole}
+	{
+		name=arteriole,
+		description={the smallest branch of arteries leading to the vast network of capillaries}
+	}
+
+	\newglossaryentry{artery}
+	{
+		name=artery,
+		description={a blood vessel, consisting of three layers of tissue and smooth muscle, that carries blood away from the heart}
+	}
+
+	\newglossaryentry{articular_cartilage}
+	{
+		name=articular cartilage,
+		description={a pearly layer specialized cartilage covering the articular surfaces (contact surfaces on the ends) of bones in synovial joints}
+	}
+
+	\newglossaryentry{atrium}
+	{
+		name=atrium ,
+		description={one of the two upper chambers of the heart}
+	}
+
+	\newglossaryentry{autonomic_nervous_system}
+	{
+		name=\acrlong{ans},
+		description={division of \acrlong{pns}; regulates involuntary activities of the body such as heart rate blood pressure and digestion of food}
+	}
+
+	\newglossaryentry{axial_plane}
+	{
+		name=axial plane,
+		description={see: \gls{transverse_plane}}
+	}
+
+	\newglossaryentry{axial_skeleton}
+	{
+		name=axial skeleton,
+		description={the part of the skull to comprising the skull, spinal column, and rib cage}
+	}
+
+	\newglossaryentry{ball_and_socket_joint}
+	{
+		name=ball-and-socket joint,
+		description={a joint that allows internal and external rotation, as well as bending}
+	}
+	
+	\newglossaryentry{beta_adrenergic_receptors}
+	{
+		name=beta-adrenergic receptors,
+		description={portions of the nervous system that, when stimulated, can cause an increase in the force of contraction of the heart, an increased heart rate, and bronchial dilation}
+	}
+	
+	\newglossaryentry{biceps}
+	{
+		name=biceps,
+		description={the large muscles that cover the front of the humerus}
+	}
+	
+	\newglossaryentry{bile_duct}
+	{
+		name=bile duct,
+		description={the duct that conveys bile between the liver and the intestine}
+	}
+	
+	\newglossaryentry{blood_pressure}
+	{
+		name= \acrlong{bp},
+		description={pressure that the blood exerts against the walls of the arteries as it passes through them}
+	}
+	
+	\newglossaryentry{brachial_artery}
+	{
+		name=brachial artery,
+		description={the major blood vessel in the upper extremities that supplies blood to the arm}
+	}
+	
+	\newglossaryentry{brain}
+	{
+		name=brain,
+		description={the controlling organ of the body and center of consciousness; functions include perception, control of reactions to the environment, emotional responses, and judgment}
+	}
+	
+	\newglossaryentry{brainstem}
+	{
+		name=brainstem,
+		description={the area of the brain between the spinal cord and cerebrum, surrounded by the cerebellum; controls functions that are necessary for life, such as respiration}
+	}
+
+	\newglossaryentry{capillary}
+	{
+		name=capillary,
+		description={a small blood vessel that connects arterials and venules; various substances pass through capillary walls, into and out of the interstitial fluid, and then on to the cells}
+	}
+
+	\newglossaryentry{capillary_vessels}
+	{
+		name=capillary vessels,
+		description={tiny blood vessels between the arterials and venules that permit transfer of oxygen, carbon dioxide, nutrients, and waste between body tissues and the blood}
+	}
+	
+	\newglossaryentry{cardiac_muscle}
+	{
+		name=cardiac muscle,
+		description={the heart muscle}
+	}
+
+	\newglossaryentry{cardiac_output}
+	{
+		name=\acrfull{co},
+		description={the measure of the volume of blood circulated by the heart in 1 minute; calculated by multiplying the stroke volume by the heart rate}
+	}
+
+	\newglossaryentry{carotid_artery}
+	{
+		name=carotid artery,
+		description={the major artery that supplies blood to the head and brain}
+	}
+
+	\newglossaryentry{cartilage}
+	{
+		name=cartilage,
+		description={the smooth connective tissue that forms the support structure of the skeletal system and provides cushioning between bones; also forms the nasal septum and portions of the outer ear}
+	}
+
+	\newglossaryentry{cecum}
+	{
+		name=cecum,
+		description={the first part of the large intestine, into which the ileum opens}
+	}
+
+	\newglossaryentry{central_nervous_system}
+	{
+		name=\acrfull{cns},
+		description={division of \acrlong{pns}; regulates involuntary activities of the body such as heart rate blood pressure and digestion of food}
+	}
+
+	\newglossaryentry{cerebellum}
+	{
+		name=cerebellum,
+		description={one of the three major subdivisions of the brain, sometimes called the 'little brain'; coordinates the various activities of the brain, particularly fine body movements}
+	}
+
+	\newglossaryentry{cerebrospinal_fluid}
+	{
+		name=\acrlong{csf},
+		description={fluid produced in the ventricles of the brain that flows in the subarachnoid space and bathes the meninges}
+	}
+
+	\newglossaryentry{cerebrum}
+	{
+		name=cerebrum,
+		description={the largest part of the three subdivisions of the brain, sometimes called the gray matter; made up of several lobes that control movement, hearing, balance, speech, visual perception, emotions, and personality}
+	}
+
+	\newglossaryentry{cervical_spine}
+	{
+		name=cervical spine,
+		description={the portion of the spinal column consisting of the first seven (7) vertebrae that lie in the neck}
+	}
+
+	\newglossaryentry{chordae_tendineae}
+	{
+		name=chordae tendineae,
+		description={thin bands of fibrous tissue that attach to the valves in the heart and prevent them from inverting}
+	}
+
+	\newglossaryentry{chyme}
+	{
+		name=chyme,
+		description={the substance that leaves the stomach; it is a combination of all the eaten foods with added stomach acids}
+	}
+
+	\newglossaryentry{circulatory_system}
+	{
+		name=circulatory system,
+		description={the complex arrangement of connected tubes, including the arteries, arterioles, capillaries, venules, and veins, that moves blood, oxygen, nutrients, carbon dioxide, and cellular waste throughout the body}
+	}
+
+	\newglossaryentry{clavicle}
+	{
+		name=clavicle,
+		description={the collar bone; it is lateral to the sternum and anterior to the scapula}
+	}
+
+	\newglossaryentry{coccyx}
+	{
+		name=coccyx,
+		description={the last three or four (3-4) vertebrae of the spine; the 'tail bone'}
+	}
+
+	\newglossaryentry{coronal_plane}
+	{
+		name=coronal plane,
+		description={an imaginary plane where the body is divided into front and back parts}
+	}
+
+	\newglossaryentry{cranium}
+	{
+		name=cranium,
+		description={the area of the head above the ears and eyes; the skull; the cranium contains the brain}
+	}
+
+	\newglossaryentry{crioid_cartilage}
+	{
+		name=crioid cartilage,
+		description={A tubular structure }
+	}
+	
+	\newglossaryentry{cricothyroid_membrane}
+	{
+		name=cricothyroid membrane,
+		description={A tubular structure }
+	}
+	
+	\newglossaryentry{dead_space}
+	{
+		name=dead space,
+		description={any portion of the airway that does not contain air and cannot participate in gas exchange, such as the trachea and bronchi}
+	}
+
+	\newglossaryentry{dermis} 
+	{
+		name=dermis,
+		description={the inner layer of the skin, containing hair follicles, sweat glands, nerve endings, and blood vessels}
+	}
+	
+	\newglossaryentry{diaphragm}
+	{
+		name=diaphragm,
+		description={muscular dome that forms the undersurface of the thorax, separating the chest from the abdominal cavity. Contraction of this (and the chest wall muscles) brings air into the lungs. Relaxation allows air to be expelled from the lungs}
+	}
+	
+	\newglossaryentry{diastole}
+	{
+		name=diastole,
+		description={relaxation, or period of relaxation, of the heart, especially of the ventricles}
+	}
+	
+	\newglossaryentry{diffusion}
+	{
+		name=diffusion,
+		description={movement of gas from an area of higher concentration to an area of lower concentration}
+	}
+
+	\newglossaryentry{digestion}
+	{
+		name=digestion,
+		description={processing of food that nourishes the individual cells of the body}
+	}
+	
+	\newglossaryentry{dorsal_spine}
+	{
+		name=dorsal spine,
+		description={lower part of the back, formed by the lowest five nonfused vertebrae; also called the lumbar spine}
+	}
+	
+	\newglossaryentry{dorsalis_pedis_artery}
+	{
+		name=dorsalis pedis artery,
+		description={artery on the anterior surface of the flow between the first and second metatarsals}
+	}
+
+	\newglossaryentry{enteric_nervous_system}
+	{
+		name=\acrlong{ens},
+		description={division of \acrlong{ans}; mesh-like system of neurons that governs the function of the gastrointestinal tract}
+	}
+
+	\newglossaryentry{endocrine_system}
+	{
+		name=endocrine system,
+		description={complex message and control system that integrates many of the body's functions, including the release of hormones}
+	}
+	
+	\newglossaryentry{enzyme}
+	{
+		name=enzyme,
+		description={substance designed to speed up the rate of specific biochemical reactions; a biological catalyst}
+	}
+	
+	\newglossaryentry{epinephrine}
+	{
+		name=epinephrine,
+		description={hormone produced by the adrenal medulla that has a vital role in the function of the sympathetic nervous system.  Also called adrenaline}
+	}
+
+	\newglossaryentry{epidermis} 
+	{
+		name=epidermis,
+		description={the outer layer of skin that acts as a watertight protective covering}
+	}
+
+	\newglossaryentry{epiglottis}
+	{
+		name=epiglottis,
+		description={A tubular structure }
+	}
+	
+	\newglossaryentry{erythrocyte}
+	{
+		name=erythrocyte,
+		description={most common type of red blood cell, whose job is to transport oxygen}
+	}
+	
+	\newglossaryentry{esophagus}
+	{
+		name=esophagus,
+		description={collapsible tube that extends from the pharynx to the stomach; muscle contractions propel food and liquids through it to the stomach}
+	}
+	
+	\newglossaryentry{expiratory_reserve_volume}
+	{
+		name=expiratory reserve volume,
+		description={amount of air that can be exhaled following a normal exhalation; average volume is about 1200 mL in the average adult male}
+	}
+	
+	\newglossaryentry{extension}
+	{
+		name=extension,
+		description={the straightening of a joint}
+	}
+
+	\newglossaryentry{fallopian_tubes}
+	{
+		name=fallopian tubes,
+		description={long, slender tubes that extend from the uterus to the region of the ovary on the same side and through which the overpasses from the ovary to the uterus}
+	}
+	
+	\newglossaryentry{femoral_artery}
+	{
+		name=femoral artery,
+		description={the major artery of the thigh, a continuation of the external iliac artery. It supplies blood to lower abdominal wall, external genitalia, and legs. It can be palpated to the groin area}
+	}
+	
+	\newglossaryentry{femoral_head}
+	{
+		name=femoral head,
+		description={proximal end of the femur, articulating with the acetabulum to form the hip joint}
+	}
+	
+	\newglossaryentry{femur}
+	{
+		name=femur,
+		description={the longest and one of the strongest bones in the body.  Also called the thighbone.}
+	}
+	
+	\newglossaryentry{flexion}
+	{
+		name=flexion,
+		description={bending of a joint}
+	}
+	
+	\newglossaryentry{foramen_magnum}
+	{
+		name=foramen magnum,
+		description={large opening at the base of the skull through which the brain connects to the spinal cord}
+	}
+	
+	\newglossaryentry{frontal_bone}
+	{
+		name=frontal bone,
+		description={portion of the cranium that forms the four head}
+	}
+
+	\newglossaryentry{gallbladder}
+	{
+		name=gallbladder,
+		description={a sac on the under surface of the liver that collects bile from the liver and discharges it into the duodenum through the common bile duct}
+	}
+	
+	\newglossaryentry{genital_system}
+	{
+		name=genital system,
+		description={reproductive system in men and women}
+	}
+	
+	\newglossaryentry{germinal_layer}
+	{
+		name=germinal layer,
+		description={deepest layer of the epidermis were new skin cells are formed}
+	}
+	
+	\newglossaryentry{greater_trochanter}
+	{
+		name=greater trochanter,
+		description={bony prominence on the proximal lateral side of the thigh, just below the hip joint}
+	}
+	
+	\newglossaryentry{hair_follicles}
+	{
+		name=hair follicles,
+		description={small organs that produce hair}
+	}
+
+	\newglossaryentry{heart}
+	{
+		name=heart,
+		description={hollow muscular organ that pumps blood throughout the body}
+	}
+
+	\newglossaryentry{heart_rate}
+	{
+		name=\acrlong{hr},
+		description={number of heartbeats during a specific time (usually 1 minute)}
+	}
+
+	\newglossaryentry{hinge_joint}
+	{
+		name=hinge joint,
+		description={joint that can bend and straighten but cannot rotate; restricted to motion in one plane}
+	}
+	
+	\newglossaryentry{hormone}
+	{
+		name=hormone,
+		description={substance formed in specialized organs or glands and carried to another organ or group of cells in the same organism; they regulate many body functions, including metabolism, growth, and body temperature}
+	}
+	
+	\newglossaryentry{humerus}
+	{
+		name=humerus,
+		description={supporting bone of the upper arm}
+	}
+	
+	\newglossaryentry{hydrostatic_pressure}
+	{
+		name=hydrostatic pressure,
+		description={pressure water against the walls of its container}
+	}
+	
+	\newglossaryentry{hypoperfusion}
+	{
+		name=hypoperfusion,
+		description={another term for shock}
+	}
+
+	\newglossaryentry{hypoxic_drive}
+	{
+		name=hypoxic drive,
+		description={A condition in which chronically low }
+	}
+
+	\newglossaryentry{ileum}
+	{
+		name=ileum,
+		description={one of the three bones the fuse to form the pelvic ring}
+	}
+	
+	\newglossaryentry{inferior_vena_cava}
+	{
+		name=inferior vena cava,
+		description={one of the two largest veins in the body; carries blood from the lower extremities and the pelvic and the abdominal organs to the heart}
+	}
+	
+	\newglossaryentry{inspiratory_reserve_volume}
+	{
+		name=inspiratory reserve volume,
+		description={amount of air that can be inhaled after normal inhalation; the amount of air that can be inhaled in addition to the normal title volume}
+	}
+
+	\newglossaryentry{intercostal_muscles}
+	{
+		name=intercostal muscles,
+		description={the secondary muscles of respiration.  They include the neck muscles (sternocleidomastoids), the chest pecoralis major muscles, and the abdominal muscles}
+	}
+		
+	\newglossaryentry{interstitial_space}
+	{
+		name=interstitial space,
+		description={space in between the cells}
+	}
+	
+	\newglossaryentry{involuntary_muscle}
+	{
+		name=involuntary muscle,
+		description={muscle over which a person has no conscious control.  It is found in many automatic regulating systems of the body}
+	}
+	
+	\newglossaryentry{ischium}
+	{
+		name=ischium,
+		description={one of three bones that fuse to form the pelvic ring}
+	}
+
+	\newglossaryentry{joint}
+	{
+		name=joint (articulation),
+		description={place were two bones come into contact}
+	}
+	
+	\newglossaryentry{joint_capsule}
+	{
+		name=joint capsule,
+		description={fibrous sac that encloses a joint}
+	}
+	
+	\newglossaryentry{kidneys}
+	{
+		name=kidneys,
+		description={two retroperitoneal organs that excrete the end products of metabolism is urine and regulate the body salt and water content}
+	}
+
+	\newglossaryentry{labored breathing}
+	{
+		name=labored breathing,
+		description={use of muscles of the chest, back, and abdomen to assist in expanding the chest; occurs when air movement is impaired}
+	}
+	
+	\newglossaryentry{lactic acid}
+	{
+		name=lactic acid,
+		description={a metabolic byproduct of the breakdown of glucose that accumulates when Metabolism proceeds in the absence of oxygen (anaerobic metabolism)}
+	}
+	
+	\newglossaryentry{large intestine}
+	{
+		name=large intestine,
+		description={portion of the digestive to betting circles the abdomen around the small bowel, consisting of the cecum, the colon, and the rectum. It helps regulate water balance and eliminate solid waste}
+	}
+		
+	\newglossaryentry{laryngopharynx}
+	{
+		name=laryngopharynx,
+		description={the secondary muscles of respiration.  They include the neck muscles (sternocleidomastoids), the chest pecoralis major muscles, and the abdominal muscles}
+	}
+
+	\newglossaryentry{lesser_trochanter}
+	{
+		name=lesser trochanter,
+		description={projection on the medial superior portion of the femur}
+	}
+	
+	\newglossaryentry{ligament}
+	{
+		name=ligament,
+		description={band of fibrous tissue that connects bones the bones. It supports and strengthens a joint}
+	}
+	
+	\newglossaryentry{liver}
+	{
+		name=liver,
+		description={a large solid organ that lies in the right upper quadrant immediately below the diaphragm; it produces bile, stores glucose for immediate use by the body, and produces many substances that help regulate immune responses}
+	}
+	
+	\newglossaryentry{lumbar_spine}
+	{
+		name=lumbar spine,
+		description={lower part of the back formed by the lowest five nonfused vertebrae; also called the dorsal spine}
+	}
+	
+	\newglossaryentry{lymph}
+	{
+		name=lymph,
+		description={fainting, straw colored fluid that carries oxygen, nutrients, and hormones to the cells and carries waste products of metabolism away from the cells and back into the capillary so that they may be excreted}
+	}
+	
+	\newglossaryentry{lymph_nodes}
+	{
+		name=lymph nodes,
+		description={tiny, oval-shaped structures located in various places along the length vessels that filter lymph}
+	}
+
+	\newglossaryentry{mandible}
+	{
+		name=mandible,
+		description={bone of the lower jaw}
+	}
+	
+	\newglossaryentry{menubrium}
+	{
+		name=menubrium,
+		description={upper quarter of the sternum}
+	}
+	
+	\newglossaryentry{maxillae}
+	{
+		name=maxillae,
+		description={upper jaw bones that assist in the formation of the orbit, the nasal cavity, and the pallet and hold the upper teeth}
+	}
+	
+	\newglossaryentry{medulla_oblongata}
+	{
+		name=medulla oblongata,
+		description={nerve tissue that is continuous inferior way with the spinal cord; serves as a conduction pathway for sending and descending nerve tracts; coordinates the heart rate blood vessel diameter, breathing, swallowing, vomiting, coughing, and sneezing}
+	}
+	
+	\newglossaryentry{metabolism}
+	{
+		name=metabolism,
+		description={biochemical processes that result in production of energy from nutrients within cells}
+	}
+	
+	\newglossaryentry{midbrain}
+	{
+		name=midbrain,
+		description={part of the brain that is responsible for helping to regulate the level of consciousness}
+	}
+	
+	\newglossaryentry{midsagittal_plane_(midline)}
+	{
+		name=midsagittal plane (midline),
+		description={imaginary vertical line drawn from the middle of the forehead through the nose and the umbilicus (navel) to the floor, dividing the body and equal left and right halves}
+	}
+	
+	\newglossaryentry{minute_ventilation}
+	{
+		name=minute ventilation,
+		description={see: minute volume}
+	}
+	
+	\newglossaryentry{minute_volume}
+	{
+		name=minute volume,
+		description={volume of air that moved and out of the lungs per minute; calculated by multiplying the title volume and respiratory rate; also called minute ventilation}
+	}
+	
+	\newglossaryentry{motor_nerves}
+	{
+		name=motor nerves,
+		description={nerves that carry information from the central nervous system to the muscles of the body}
+	}
+	
+	\newglossaryentry{mucous membranes}
+	{
+		name=mucous membranes,
+		description={whining of body cavities and passages that communicate directly or indirectly with the environment outside of the body}
+	}
+	
+	\newglossaryentry{mucus}
+	{
+		name=mucus,
+		description={moderate secretion of the mucous membranes that lubricates the body openings}
+	}
+	
+	\newglossaryentry{musculoskeletal system}
+	{
+		name=musculoskeletal system,
+		description={bones involuntary muscles of the body}
+	}
+	
+	\newglossaryentry{myocardium}
+	{
+		name=myocardium,
+		description={heart muscle}
+	}
+	
+	\newglossaryentry{nasopharynx}
+	{
+		name=nasopharynx,
+		description={part of the pharynx that lies above the level of the roof of the mouth, or palate}
+	}
+	
+	\newglossaryentry{nervous system}
+	{
+		name=nervous system,
+		description={system that controls virtually all activities of the body, both voluntary and involuntary}
+	}
+	
+	\newglossaryentry{norepinephrine}
+	{
+		name=norepinephrine,
+		description={neurotransmitter and drug sometimes used in the treatment of shock; produces vasoconstriction to its alpha-stimulator properties}
+	}
+	
+	\newglossaryentry{occiput}
+	{
+		name=occiput,
+		description={most posterior portion of the cranium}
+	}
+	
+	\newglossaryentry{oncotic_pressure}
+	{
+		name=oncotic pressure,
+		description={pressure of water to move, typically into the capillary, as the result of the presence of plasma proteins}
+	}
+	
+	\newglossaryentry{orbit}
+	{
+		name=orbit,
+		description={eye socket, made up of maxilla and zygoma}
+	}
+	
+	\newglossaryentry{oropharynx}
+	{
+		name=oropharynx,
+		description={tubular structure that extends vertically from the back of the mouth to the esophagus and trachea}
+	}
+	
+	\newglossaryentry{ovaries}
+	{
+		name=ovaries,
+		description={female glands that produce sex hormones and (ova)}
+	}
+	
+	\newglossaryentry{palate}
+	{
+		name=palate,
+		description={the "roof" of the mouth}
+	}
+	
+	\newglossaryentry{pancreas}
+	{
+		name=pancreas,
+		description={a flat, solid organ that lies below the liver and the stomach; it is a major source of digestive enzymes that produces the hormone insulin}
+	}
+	
+	\newglossaryentry{parasympathetic_nervous_system}
+	{
+		name=parasympathetic nervous system,
+		description={subdivision of the autonomic nervous system, involved in control of involuntary functions mediated largely by the vagus nerve to the chemical acetylcholine}
+	}
+	
+	\newglossaryentry{parietal_bones}
+	{
+		name=parietal bones,
+		description={bones that lie between the temp oral and occipital regions of the cranium}
+	}
+	
+	\newglossaryentry{patella}
+	{
+		name=patella,
+		description={knee cap; a specialized bone that lies within the tendon of the quadriceps muscle}
+	}
+	
+	\newglossaryentry{pathophysiology}
+	{
+		name=pathophysiology,
+		description={study of how normal physiologic processes are affected by disease}
+	}
+	
+	\newglossaryentry{perfusion}
+	{
+		name=perfusion,
+		description={circulation of oxygenated blood within an organ or tissue in adequate amounts to meet the cells' current needs}
+	}
+	
+	\newglossaryentry{peristalsis}
+	{
+		name=peristalsis,
+		description={the wavelike contraction of the smooth muscle by which the ureters or other tubular organs propelled their contents}
+	}
+	
+	\newglossaryentry{plasma}
+	{
+		name=plasma,
+		description={a sticky, yellow fluid that carries the blood cells and nutrients and transport cellular waste material to the organs of excretion }
+	}
+	
+	\newglossaryentry{platelets}
+	{
+		name=platelets,
+		description={tiny, disc-shaped elements that are much smaller than the cells; they are essential in the initial formation of a blood clot, the mechanism that stops bleeding}
+	}
+	
+	\newglossaryentry{pleura}
+	{
+		name=pleura,
+		description={the Saras membranes covering the lungs and lining the thorax completely enclosing a potential space known as the pleural space}
+	}
+	
+	\newglossaryentry{pleural_space}
+	{
+		name=pleural space,
+		description={potential space between the parietal pleura and of the visceral pleura; described as "potential" because under normal conditions, the spaces not exist}
+	}
+	
+	\newglossaryentry{pons}
+	{
+		name=pons,
+		description={organ that lies below the midbrain and above the medulla and contains numerous important nerve fibers, including those for sleep, respiration, and the medullary respiratory center}
+	}
+	
+	\newglossaryentry{posterior_tibial_artery}
+	{
+		name=posterior tibial artery,
+		description={artery just behind the medial malleolus; supplies blood to the foot}
+	}
+	
+	\newglossaryentry{prostate_gland}
+	{
+		name=prostate gland,
+		description={small gland that surrounds the male urethra where it emerges from the urinary bladder; it's increase the fluid that is part of the ejaculatory fluid}
+	}
+	
+	\newglossaryentry{pubic_symphysis}
+	{
+		name=pubic symphysis,
+		description={hard, bony, and cartilaginous prominence found at the midline in the lowermost portion of the abdomen where the two halves of the pelvic ring are joined by cartilage at a joint with minimal motion}
+	}
+	
+	\newglossaryentry{pubis}
+	{
+		name=pubis,
+		description={one of the three bones that fuse to form the pelvic ring}
+	}
+	
+	\newglossaryentry{pulmonary_artery}
+	{
+		name=pulmonary artery,
+		description={the major artery leading from the right ventricle of the heart to the lungs; carries oxygen-poor blood}
+	}
+	
+	\newglossaryentry{pulmonary_circulation}
+	{
+		name=pulmonary circulation,
+		description={flow of blood from the right ventricle through the pulmonary arteries and all of their branches and capillaries in the lungs and back to the left atrium through the venules and pulmonary veins; also called the lesser circulation}
+	}
+	
+	\newglossaryentry{pulmonary_veins}
+	{
+		name=pulmonary veins,
+		description={four veins that return oxygenated blood from the lungs to the left atrium of the heart}
+	}
+	
+	\newglossaryentry{pulse}
+	{
+		name=pulse,
+		description={wave of pressure created as the heart contracts of horses blood out of the left ventricle and into the major arteries}
+	}
+	
+	\newglossaryentry{radial_artery}
+	{
+		name=radial artery,
+		description={major artery in the forearm; it is palpable at the wrist on the thumb side}
+	}
+	
+	\newglossaryentry{radius}
+	{
+		name=radius,
+		description={the bone on the thumb side of the forearm}
+	}
+	
+	\newglossaryentry{rectum}
+	{
+		name=rectum,
+		description={the lowermost end of the:}
+	}
+	
+	\newglossaryentry{red_blood_cell}
+	{
+		name=red blood cell,
+		description={cell that carries oxygen to the body's tissues; also an called erythrocyte}
+	}
+	
+	\newglossaryentry{renal_pelvis}
+	{
+		name=Renal pelvis,
+		description={cone-shaped area that collects urine from the kidneys and funnels it through the ureter into the bladder}
+	}
+	
+	\newglossaryentry{residual_volume}
+	{
+		name=residual volume,
+		description={air that remains in the lungs after maximal expiration}
+	}
+	
+	\newglossaryentry{respiration}
+	{
+		name=respiration,
+		description={inhaling and exhaling of air; the physiologic process that exchanges carbon dioxide from fresh air}
+	}
+	
+	\newglossaryentry{respiratory_compromise}
+	{
+		name=respiratory compromise,
+		description={inability of the body to move gas effectively}
+	}
+	
+	\newglossaryentry{respiratory_system}
+	{
+		name=respiratory system,
+		description={all the structures of the body that contribute to the process of breathing, consisting of the upper and lower airways and their component parts}
+	}
+	
+	\newglossaryentry{reticular_activating_system}
+	{
+		name=reticular activating system,
+		description={located in the upper brainstem; responsible for the maintenance of consciousness, specifically one's level of arousal}
+	}
+	
+	\newglossaryentry{retroperitoneal}
+	{
+		name=retroperitoneal,
+		description={behind the abdominal cavity}
+	}
+	
+	\newglossaryentry{sacroiliac_joint}
+	{
+		name=sacroiliac joint,
+		description={connection point between the pelvis and the vertebral column}
+	}
+	
+	\newglossaryentry{sacrum}
+	{
+		name=sacrum,
+		description={one of the three bones (sacrum and two pelvic bones) that make up the pelvic ring; consists of five fused sacral vertebrae}
+	}
+	
+	\newglossaryentry{sagittal_(lateral)_plane}
+	{
+		name=sagittal (lateral) plane,
+		description={imaginary line where the body is divided into left and right parts}
+	}
+	
+	\newglossaryentry{salivary_glands}
+	{
+		name=salivary glands,
+		description={glands that produce saliva to keep the mouth and pharynx moist}
+	}
+	
+	\newglossaryentry{scalp}
+	{
+		name=scalp,
+		description={thick skin covering the cranium which usually bears hair}
+	}
+	
+	\newglossaryentry{scapula}
+	{
+		name=scapula,
+		description={the shoulder blade}
+	}
+	
+	\newglossaryentry{sebaceous_glands}
+	{
+		name=sebaceous glands,
+		description={glands that produce an oily substance called sebum, which discharges along the shafts of the hairs}
+	}
+	
+	\newglossaryentry{semen}
+	{
+		name=semen,
+		description={fluid ejaculated from the penis and containing sperm}
+	}
+	
+	\newglossaryentry{seminal_vesicles}
+	{
+		name=seminal vesicles,
+		description={storage sacs for sperm and seminal fluid which empty into the urethra at the prostate}
+	}
+	
+	\newglossaryentry{sensory_nerves}
+	{
+		name=sensory nerves,
+		description={nerves that carry sensations such as  touch, taste, smell, heat, cold, and pain from the body to the central nervous system}
+	}
+	
+	\newglossaryentry{shock}
+	{
+		name=shock,
+		description={abnormal state associated with the inadequate oxygen and nutrient delivery to the cells of the body, also known as hypoperfusion}
+	}
+	
+	\newglossaryentry{shoulder_girdle}
+	{
+		name=shoulder girdle,
+		description={the proximal portion of the upper extremities, made up of the clavicle, the scapula, and the humerus}
+	}
+	
+	\newglossaryentry{skeletal_muscle}
+	{
+		name=skeletal muscle,
+		description={muscle that is attached to bones and usually crosses at least one joint; striated, or voluntary, muscle}
+	}
+	
+	\newglossaryentry{skeleton}
+	{
+		name=skeleton,
+		description={framework that gives the body its recognizable form; also designed to allow motion of the body and protection of vital organs}
+	}
+	
+	\newglossaryentry{small_intestine}
+	{
+		name=small intestine,
+		description={portion of the digestive to between the stomach and the cecum, consisting of the duodenum, jejunum, and ileum}
+	}
+	
+	\newglossaryentry{smooth_muscle}
+	{
+		name=smooth muscle,
+		description={involuntary muscle; it constitutes the bulk of the gastrointestinal tract and is present in nearly every organ to regulate automatic activity}
+	}
+	
+	\newglossaryentry{somatic_nervous_system}
+	{
+		name=somatic nervous system,
+		description={part of the nervous system that regulates activities over which there is voluntary control}
+	}
+	
+	\newglossaryentry{sphincter}
+	{
+		name=sphincter,
+		description={muscle arranged in  a circle that is able to decrease the diameter of tubes. Examples are found within the rectum, bladder, and blood vessels}
+	}
+	
+	\newglossaryentry{sphygmomanometer}
+	{
+		name=sphygmomanometer,
+		description={device used to measure blood pressure}
+	}
+	
+	\newglossaryentry{spinal_cord}
+	{
+		name=spinal cord,
+		description={extension of the brain, composed of virtually all the nerves carry messages between the brain and the rest of the body. It lies inside of and is protected by the spinal canal}
+	}
+	
+	\newglossaryentry{sternum}
+	{
+		name=sternum,
+		description={breastbone}
+	}
+	
+	\newglossaryentry{stratum_corneal_layer}
+	{
+		name=stratum corneal layer,
+		description={outermost board dead layer of the skin}
+	}
+	
+	\newglossaryentry{stroke volume}
+	{
+		name=\acrlong{sv},
+		description={volume of blood pumped forward with each ventricular contraction}
+	}
+	
+	\newglossaryentry{subcutaneous_tissue}
+	{
+		name=subcutaneous tissue,
+		description={tissue, largely fat, that lies directly under the dermis and serves as an insulator of the body}
+	}
+	
+	\newglossaryentry{superior_vena_cava}
+	{
+		name=superior vena cava,
+		description={one of the two largest veins in the body; carries blood from the upper extremities, head, neck, and chest into the heart}
+	}
+	
+	\newglossaryentry{sweat_glands}
+	{
+		name=sweat glands,
+		description={glands that secrete sweat located in the dermal layer of the skin}
+	}
+	
+	\newglossaryentry{symphysis}
+	{
+		name=symphysis,
+		description={type of joint that is grown together to form a very stable connection}
+	}
+	
+	\newglossaryentry{synovial_fluid}
+	{
+		name=synovial fluid,
+		description={small amount of liquid within a joint use as lubrication}
+	}
+	
+	\newglossaryentry{synovial_membrane}
+	{
+		name=synovial membrane,
+		description={lighting of a joint that secrete synovial fluid into the joint space}
+	}
+	
+	\newglossaryentry{systemic_circulation}
+	{
+		name=systemic circulation,
+		description={portion of the circulatory system outside of the heart and lungs}
+	}
+	
+	\newglossaryentry{systemic_vascular_resistance}
+	{
+		name=\acrlong{svr},
+		description={resistance that blood must overcome to be able to move within the blood vessels; related to the amount of dilation or constriction in the blood vessel}
+	}
+
+	\newglossaryentry{systole}
+	{
+		name=systole,
+		description={contraction, or period of contraction, of the heart, especially that of the ventricles}
+	}
+	
+	\newglossaryentry{temporal_bones}
+	{
+		name=temporal bones,
+		description={lateral bones on each side of the cranium; the temples}
+	}
+	
+	\newglossaryentry{tendons}
+	{
+		name=tendons,
+		description={fibrous connective tissue that attaches muscle to bone}
+	}
+	
+	\newglossaryentry{testicle}
+	{
+		name=testicle,
+		description={it male genital land that contain specialized cells that produce hormones and sperm}
+	}
+	
+	\newglossaryentry{thoracic_cage}
+	{
+		name=thoracic cage,
+		description={chest or rib cage}
+	}
+	
+	\newglossaryentry{thoracic_spine}
+	{
+		name=thoracic spine,
+		description={12 vertebrae that lie between the cervical vertebrae and the lumbar vertebrae. One pair of ribs is attached to each of these vertebrae}
+	}
+	
+	\newglossaryentry{thorax}
+	{
+		name=thorax,
+		description={chest cavity contains the heart, lungs, esophagus, and great vessels}
+	}
+	
+	\newglossaryentry{thighbone}
+	{
+		name=thighbone,
+		description={another name for the femur}
+	}
+	
+	\newglossaryentry{thyroid_cartilage}
+	{
+		name=thyroid cartilage,
+		description={firm prominence of cartilage that forms the upper part of the larynx; the Adam's apple}
+	}
+	
+	\newglossaryentry{tibia}
+	{
+		name=tibia,
+		description={shinbone; larger of the two bones of the lower leg}
+	}
+	
+	\newglossaryentry{tidal_volume}
+	{
+		name=tidal volume,
+		description={amount of air moved in and out of the lungs are one relaxed breath; about 500 mL for an adult}
+	}
+	
+	\newglossaryentry{topographic_anatomy}
+	{
+		name=topographic anatomy,
+		description={the superficial landmarks of the body that serve as guides to the structures that lie beneath them}
+	}
+	
+	\newglossaryentry{trachea}
+	{
+		name=trachea,
+		description={the windpipe; main trunk for air passing to and from the lungs}
+	}
+	
+	\newglossaryentry{transverse_plane}
+	{
+		name=transverse plane,
+		description={an imaginary line with the body is divided in the top and bottom parts.  Also known as the \gls{axial_plane}}
+	}
+	
+	\newglossaryentry{triceps}
+	{
+		name=triceps,
+		description={muscle in the back of the upper arm}
+	}
+	
+	\newglossaryentry{tunica media}
+	{
+		name=tunica media,
+		description={middle and thickest part of tissue of a blood vessel wall, composed of elastic tissue and smooth muscle cells that allow the vessel to expand or contract in response to changes in blood pressure and tissue demand}
+	}
+	
+	\newglossaryentry{ulna}
+	{
+		name=ulna,
+		description={enter bone of the forearm, on the side opposite the thumb}
+	}
+	
+	\newglossaryentry{ureter}
+	{
+		name=ureter,
+		description={small, hollow tube that carries urine from the kidneys to the bladder}
+	}
+	
+	\newglossaryentry{urethra}
+	{
+		name=urethra,
+		description={canal that conveys urine from the bladder to the outside of the body}
+	}
+	
+	\newglossaryentry{urinary_bladder}
+	{
+		name=urinary bladder,
+		description={a sac behind the pubic symphysis made of smooth muscle that collects and stores urine}
+	}
+	
+	\newglossaryentry{urinary_system}
+	{
+		name=urinary system,
+		description={organs that control the discharge of certain waste materials filtered from the blood and excreted as urine}
+	}
+	
+	\newglossaryentry{vagina}
+	{
+		name=vagina,
+		description={muscular, dispensable to that connects the uterus with the vulva (the external female genitalia); also called the birth canal}
+	}
+	
+	\newglossaryentry{vasa_deferentia}
+	{
+		name=vasa deferentia,
+		description={spermatic duct of the testicles; also called the vas deferens}
+	}
+	
+	\newglossaryentry{vas_deferens}
+	{
+		name=vas deferens,
+		description={see: vasa deferentia}
+	}
+	
+	\newglossaryentry{ventilation}
+	{
+		name=ventilation,
+		description={movement of air between the lungs and the environment}
+	}
+	
+	\newglossaryentry{ventricle}
+	{
+		name=ventricle,
+		description={one of two lower chambers of the heart}
+	}
+	
+	\newglossaryentry{vertebrae}
+	{
+		name=vertebrae,
+		description={the 33 bones that make up the spinal column}
+	}
+	
+	\newglossaryentry{voluntary_muscle}
+	{
+		name=voluntary muscle,
+		description={muscle that is under direct voluntary control of the brain can be contracted or relax that will; skeletal, or striated, muscle}
+	}
+	
+	\newglossaryentry{vq_ratio}
+	{
+		name=V/Q ratio,
+		description={measurement that examines how much gas is being moved effectively and how much blood is flowing around the alveoli or gas exchange (perfusion) occurs}
+	}
+	
+	\newglossaryentry{white_blood_cell}
+	{
+		name=white blood cell,
+		description={blood cell that has a role in the body's immune defense against infection; also called a leukocyte}
+	}
+	
+	\newglossaryentry{xiphoid_process}
+	{
+		name=xiphoid process,
+		description={narrow, cartilaginous lower tip of the sternum}
+	}
+	
+	\newglossaryentry{zygomas}
+	{
+		name=zygomas,
+		description={the quadrangualar bones of the cheek, articulating with the frontal bone, the maxillae, the zygomatic processes of the temporal bone, and the great wings of the sphenoid bone}
+	}
+
+\chapter{The Human Body}
+
+\subsection*{Abbreviations}
+\begin{description}[leftmargin=!,labelwidth=\widthof{\bfseries ABCDF}]
+	\item [\acrshort{ans}] 			\acrlong{ans}
+	\item [\acrshort{co}] 			\acrlong{co}
+	\item [\acrshort{cns}] 			\acrlong{cns}
+	\item [\acrshort{ens}] 			\acrlong{ens}
+	\item [\acrshort{hr}] 			\acrlong{hr}
+	\item [\acrshort{pns}] 			\acrlong{pns}
+	\item [\acrshort{psns}] 		\acrlong{psns}
+	\item [\acrshort{sns}] 			\acrlong{sns}
+	\item [\acrshort{sv}] 			\acrlong{sv}
+\end{description}\hfill \\
+
+\subsection*{Definitions}
+\begin{description}
+	\item [\gls{abdomen}] 							\glsdesc{abdomen}
+	\item [\gls{accessory_muscles}] 				\glsdesc{accessory_muscles}
+	\item [\gls{acetabulum}] 						\glsdesc{acetabulum}
+	\item [\gls{adams_apple}] 						\glsdesc{adams_apple}
+	\item [\gls{adenosine_triphosphate}] 			\glsdesc{adenosine_triphosphate}
+	\item [\gls{adrenal_gland}] 					\glsdesc{adrenal_gland}
+	\item [\gls{adrenaline}] 						\glsdesc{adrenaline}
+	\item [\gls{adrenergic}] 						\glsdesc{adrenergic}
+	\item [\gls{aerobic_metabolism}] 				\glsdesc{aerobic_metabolism}
+	\item [\gls{agonal_gasps}] 						\glsdesc{agonal_gasps}
+	\item [\gls{alpha_adrenergic_receptors}] 		\glsdesc{alpha_adrenergic_receptors}
+	\item [\gls{alveoli}] 							\glsdesc{alveoli}
+	\item [\gls{anaerobic_metabolism}] 				\glsdesc{anaerobic_metabolism}
+	\item [\gls{anatomic_position}] 				\glsdesc{anatomic_position}
+	\item [\gls{aorta}]								\glsdesc{aorta}
+	\item [\gls{appendicular_skeleton}] 			\glsdesc{appendicular_skeleton}
+	\item [\gls{appendix}] 							\glsdesc{appendix}
+	\item [\gls{arteriole}] 						\glsdesc{arteriole}
+	\item [\gls{artery}] 							\glsdesc{artery}
+	\item [\gls{articular_cartilage}] 				\glsdesc{articular_cartilage}
+	\item [\gls{atrium}] 							\glsdesc{atrium}
+	\item [\gls{autonomic_nervous_system}] 			\glsdesc{autonomic_nervous_system}
+	\item [\gls{axial_skeleton}] 					\glsdesc{axial_skeleton}
+	\item [\gls{ball_and_socket_joint}]				\glsdesc{ball_and_socket_joint}
+	\item [\gls{beta_adrenergic_receptors}]			\glsdesc{beta_adrenergic_receptors}
+	\item [\gls{biceps}]							\glsdesc{biceps}
+	\item [\gls{bile_duct}]							\glsdesc{bile_duct}
+	\item [\gls{blood_pressure}]					\glsdesc{blood_pressure}
+	\item [\gls{brachial_artery}]					\glsdesc{brachial_artery}
+	\item [\gls{brain}]								\glsdesc{brain}
+	\item [\gls{brainstem}]							\glsdesc{brainstem}
+	
+	\item [\gls{capillary}] 						\glsdesc{capillary}
+	\item [\gls{capillary_vessels}] 				\glsdesc{capillary_vessels}
+	\item [\gls{cardiac_muscle}] 					\glsdesc{cardiac_muscle}
+	
+	\item [\gls{cardiac_output}] 					\glsdesc{cardiac_output}
+	\item [\gls{carotid_artery}] 					\glsdesc{carotid_artery}
+	\item [\gls{cartilage}] 						\glsdesc{cartilage}
+	\item [\gls{cecum}] 							\glsdesc{cecum}
+	\item [\gls{central_nervous_system}] 			\glsdesc{central_nervous_system}
+	\item [\gls{cerebellum}] 						\glsdesc{cerebellum}
+	\item [\gls{cerebrospinal_fluid}] 				\glsdesc{cerebrospinal_fluid}
+	\item [\gls{cerebrum}] 							\glsdesc{cerebrum}
+	\item [\gls{cervical_spine}] 					\glsdesc{cervical_spine}
+	\item [\gls{chordae_tendineae}] 				\glsdesc{chordae_tendineae}
+	\item [\gls{chyme}] 							\glsdesc{chyme}
+	\item [\gls{circulatory_system}] 				\glsdesc{circulatory_system}
+	\item [\gls{clavicle}] 							\glsdesc{clavicle}
+	\item [\gls{coccyx}] 							\glsdesc{coccyx}
+	\item [\gls{coronal_plane}] 					\glsdesc{coronal_plane}
+	\item [\gls{cranium}] 							\glsdesc{cranium}
+	\item [\gls{crioid_cartilage}] 					\glsdesc{crioid_cartilage}
+	\item [\gls{cricothyroid_membrane}] 			\glsdesc{cricothyroid_membrane}
+	\item [\gls{dead_space}]	 					\glsdesc{dead_space}
+	\item [\gls{dermis}]	 						\glsdesc{dermis}
+	\item [\gls{diaphragm}] 						\glsdesc{diaphragm}
+	\item [\gls{diastole}] 							\glsdesc{diastole}
+	\item [\gls{diffusion}] 						\glsdesc{diffusion}
+	\item [\gls{digestion}] 						\glsdesc{digestion}
+	\item [\gls{dorsalis_pedis_artery}] 			\glsdesc{dorsalis_pedis_artery}
+	\item [\gls{endocrine_system}] 					\glsdesc{endocrine_system}
+	\item [\gls{enzyme}] 							\glsdesc{enzyme}
+	\item [\gls{epidermis}]	 						\glsdesc{epidermis}
+	\item [\gls{epiglottis}]	 					\glsdesc{epiglottis}
+	\item [\gls{epinephrine}]	 					\glsdesc{epinephrine}
+	\item [\gls{esophagus}]	 						\glsdesc{esophagus}
+	\item [\gls{expiratory_reserve_volume}]	 		\glsdesc{expiratory_reserve_volume}
+	\item [\gls{extension}]	 						\glsdesc{extension}
+	\item [\gls{fallopian_tubes}]                   \glsdesc{fallopian_tubes}
+	\item [\gls{femoral_artery}]                    \glsdesc{femoral_artery}
+	\item [\gls{femoral_head}]                      \glsdesc{femoral_head}
+	\item [\gls{femur}]                             \glsdesc{femur}
+	\item [\gls{flexion}]                           \glsdesc{flexion}
+	\item [\gls{foramen_magnum}]                    \glsdesc{foramen_magnum}
+	\item [\gls{frontal_bone}]                      \glsdesc{frontal_bone}
+	\item [\gls{gallbladder}]                       \glsdesc{gallbladder}
+	\item [\gls{genital_system}]                    \glsdesc{genital_system}
+	\item [\gls{germinal_layer}]                    \glsdesc{germinal_layer}
+	\item [\gls{greater_trochanter}]                \glsdesc{greater_trochanter}
+	\item [\gls{hair_follicles}]                    \glsdesc{hair_follicles}
+	\item [\gls{heart}]                             \glsdesc{heart}
+	\item [\gls{heart_rate}]                        \glsdesc{heart_rate}
+	\item [\gls{hinge_joint}]						\glsdesc{hinge_joint}
+	\item [\gls{hormone}]                           \glsdesc{hormone}
+	\item [\gls{humerus}]                           \glsdesc{humerus}
+	\item [\gls{hydrostatic_pressure}]              \glsdesc{hydrostatic_pressure}
+	\item [\gls{hypoperfusion}]                     \glsdesc{hypoperfusion}
+	\item [\gls{hypoxic_drive}]                     \glsdesc{hypoxic_drive}
+	\item [\gls{ileum}]                             \glsdesc{ileum}
+	\item [\gls{inferior_vena_cava}]                \glsdesc{inferior_vena_cava}
+	\item [\gls{inspiratory_reserve_volume}]        \glsdesc{inspiratory_reserve_volume}
+	\item [\gls{intercostal_muscles}]               \glsdesc{intercostal_muscles}
+	\item [\gls{interstitial_space}]                \glsdesc{interstitial_space}
+	\item [\gls{involuntary_muscle}]                \glsdesc{involuntary_muscle}
+	\item [\gls{ischium}]                           \glsdesc{ischium}
+	\item [\gls{joint}]                             \glsdesc{joint}
+	\item [\gls{joint_capsule}]                     \glsdesc{joint_capsule}
+	\item [\gls{kidneys}]                           \glsdesc{kidneys}
+	\item [\gls{labored breathing}]                 \glsdesc{labored breathing}
+	\item [\gls{lactic acid}]                       \glsdesc{lactic acid}
+	\item [\gls{large intestine}]                   \glsdesc{large intestine}
+	\item [\gls{laryngopharynx}]                    \glsdesc{laryngopharynx}
+	\item [\gls{lesser_trochanter}]                 \glsdesc{lesser_trochanter}
+	\item [\gls{ligament}]                          \glsdesc{ligament}
+	\item [\gls{liver}]                             \glsdesc{liver}
+	\item [\gls{lumbar_spine}]                      \glsdesc{lumbar_spine}
+	\item [\gls{lymph}]                             \glsdesc{lymph}
+	\item [\gls{lymph_nodes}]                       \glsdesc{lymph_nodes}
+	\item [\gls{mandible}]                          \glsdesc{mandible}
+	\item [\gls{menubrium}]                         \glsdesc{menubrium}
+	\item [\gls{maxillae}]                          \glsdesc{maxillae}
+	\item [\gls{medulla_oblongata}]                 \glsdesc{medulla_oblongata}
+	\item [\gls{metabolism}]                        \glsdesc{metabolism}
+	\item [\gls{midbrain}]                          \glsdesc{midbrain}
+	\item [\gls{midsagittal_plane_(midline)}]       \glsdesc{midsagittal_plane_(midline)}
+	\item [\gls{minute_ventilation}]                \glsdesc{minute_ventilation}
+	\item [\gls{minute_volume}]                     \glsdesc{minute_volume}
+	\item [\gls{motor_nerves}]                      \glsdesc{motor_nerves}
+	\item [\gls{mucous membranes}]                  \glsdesc{mucous membranes}
+	\item [\gls{mucus}]                             \glsdesc{mucus}
+	\item [\gls{musculoskeletal system}]            \glsdesc{musculoskeletal system}
+	\item [\gls{myocardium}]                        \glsdesc{myocardium}
+	\item [\gls{nasopharynx}]                       \glsdesc{nasopharynx}
+	\item [\gls{nervous system}]                    \glsdesc{nervous system}
+	\item [\gls{norepinephrine}]                    \glsdesc{norepinephrine}
+	\item [\gls{occiput}]                           \glsdesc{occiput}
+	\item [\gls{oncotic_pressure}]                  \glsdesc{oncotic_pressure}
+	\item [\gls{orbit}]                             \glsdesc{orbit}
+	\item [\gls{ovaries}]                           \glsdesc{ovaries}
+	\item [\gls{palate}]                            \glsdesc{palate}
+	\item [\gls{pancreas}]                          \glsdesc{pancreas}
+	\item [\gls{parasympathetic_nervous_system}]    \glsdesc{parasympathetic_nervous_system}
+	\item [\gls{parietal_bones}]                    \glsdesc{parietal_bones}
+	\item [\gls{patella}]                           \glsdesc{patella}
+	\item [\gls{pathophysiology}]                   \glsdesc{pathophysiology}
+	\item [\gls{perfusion}]                         \glsdesc{perfusion}
+	\item [\gls{peristalsis}]                       \glsdesc{peristalsis}
+	\item [\gls{plasma}]                            \glsdesc{plasma}
+	\item [\gls{pleura}]                            \glsdesc{pleura}
+	\item [\gls{pleural_space}]                     \glsdesc{pleural_space}
+	\item [\gls{posterior_tibial_artery}]           \glsdesc{posterior_tibial_artery}
+	\item [\gls{prostate_gland}]                    \glsdesc{prostate_gland}
+	\item [\gls{pubic_symphysis}]                   \glsdesc{pubic_symphysis}
+	\item [\gls{pubis}]                             \glsdesc{pubis}
+	\item [\gls{pulmonary_artery}]                  \glsdesc{pulmonary_artery}
+	\item [\gls{pulmonary_circulation}]             \glsdesc{pulmonary_circulation}
+	\item [\gls{pulmonary_veins}]                   \glsdesc{pulmonary_veins}
+	\item [\gls{pulse}]                             \glsdesc{pulse}
+	\item [\gls{radial_artery}]                     \glsdesc{radial_artery}
+	\item [\gls{radius}]                            \glsdesc{radius}
+	\item [\gls{rectum}]                            \glsdesc{rectum}
+	\item [\gls{red_blood_cell}]                    \glsdesc{red_blood_cell}
+	\item [\gls{renal_pelvis}]                      \glsdesc{renal_pelvis}
+	\item [\gls{residual_volume}]                   \glsdesc{residual_volume}
+	\item [\gls{respiration}]                       \glsdesc{respiration}
+	\item [\gls{respiratory_compromise}]            \glsdesc{respiratory_compromise}
+	\item [\gls{respiratory_system}]                \glsdesc{respiratory_system}
+	\item [\gls{reticular_activating_system}]       \glsdesc{reticular_activating_system}
+	\item [\gls{retroperitoneal}]                   \glsdesc{retroperitoneal}
+	\item [\gls{sacroiliac_joint}]                  \glsdesc{sacroiliac_joint}
+	\item [\gls{sacrum}]                            \glsdesc{sacrum}
+	\item [\gls{sagittal_(lateral)_plane}]          \glsdesc{sagittal_(lateral)_plane}
+	\item [\gls{salivary_glands}]                   \glsdesc{salivary_glands}
+	\item [\gls{scalp}]                             \glsdesc{scalp}
+	\item [\gls{scapula}]                           \glsdesc{scapula}
+	\item [\gls{sebaceous_glands}]                  \glsdesc{sebaceous_glands}
+	\item [\gls{semen}]                             \glsdesc{semen}
+	\item [\gls{seminal_vesicles}]                  \glsdesc{seminal_vesicles}
+	\item [\gls{sensory_nerves}]                    \glsdesc{sensory_nerves}
+	\item [\gls{shock}]                             \glsdesc{shock}
+	\item [\gls{shoulder_girdle}]                   \glsdesc{shoulder_girdle}
+	\item [\gls{skeletal_muscle}]                   \glsdesc{skeletal_muscle}
+	\item [\gls{skeleton}]                          \glsdesc{skeleton}
+	\item [\gls{small_intestine}]                   \glsdesc{small_intestine}
+	\item [\gls{smooth_muscle}]                     \glsdesc{smooth_muscle}
+	\item [\gls{somatic_nervous_system}]            \glsdesc{somatic_nervous_system}
+	\item [\gls{sphincter}]                         \glsdesc{sphincter}
+	\item [\gls{sphygmomanometer}]                  \glsdesc{sphygmomanometer}
+	\item [\gls{spinal_cord}]                       \glsdesc{spinal_cord}
+	\item [\gls{sternum}]                           \glsdesc{sternum}
+	\item [\gls{stratum_corneal_layer}]             \glsdesc{stratum_corneal_layer}
+	\item [\gls{stroke volume}]                     \glsdesc{stroke volume}
+	\item [\gls{subcutaneous_tissue}]               \glsdesc{subcutaneous_tissue}
+	\item [\gls{superior_vena_cava}]                \glsdesc{superior_vena_cava}
+	\item [\gls{sweat_glands}]                      \glsdesc{sweat_glands}
+	\item [\gls{symphysis}]                         \glsdesc{symphysis}
+	\item [\gls{synovial_fluid}]                    \glsdesc{synovial_fluid}
+	\item [\gls{synovial_membrane}]                 \glsdesc{synovial_membrane}
+	\item [\gls{systemic_circulation}]              \glsdesc{systemic_circulation}
+	\item [\gls{systemic_vascular_resistance}]      \glsdesc{systemic_vascular_resistance}
+	\item [\gls{systole}]                           \glsdesc{systole}
+	\item [\gls{temporal_bones}]                    \glsdesc{temporal_bones}
+	\item [\gls{tendons}]                           \glsdesc{tendons}
+	\item [\gls{testicle}]                          \glsdesc{testicle}
+	\item [\gls{thoracic_cage}]                     \glsdesc{thoracic_cage}
+	\item [\gls{thoracic_spine}]                    \glsdesc{thoracic_spine}
+	\item [\gls{thorax}]                            \glsdesc{thorax}
+	\item [\gls{thighbone}]                         \glsdesc{thighbone}
+	\item [\gls{thyroid_cartilage}]                 \glsdesc{thyroid_cartilage}
+	\item [\gls{tibia}]                             \glsdesc{tibia}
+	\item [\gls{tidal_volume}]                      \glsdesc{tidal_volume}
+	\item [\gls{topographic_anatomy}]               \glsdesc{topographic_anatomy}
+	\item [\gls{trachea}]                           \glsdesc{trachea}
+	\item [\gls{transverse_plane}]        		  	\glsdesc{transverse_plane}
+	\item [\gls{triceps}]                           \glsdesc{triceps}
+	\item [\gls{tunica media}]                      \glsdesc{tunica media}
+	\item [\gls{ulna}] 								\glsdesc{ulna}
+	\item [\gls{ureter}] 							\glsdesc{ureter}
+	\item [\gls{urethra}] 							\glsdesc{urethra}
+	\item [\gls{urinary_bladder}] 					\glsdesc{urinary_bladder}
+	\item [\gls{urinary_system}] 					\glsdesc{urinary_system}
+	\item [\gls{vagina}] 							\glsdesc{vagina}
+	\item [\gls{vas_deferens}] 						\glsdesc{vas_deferens}
+	\item [\gls{ventilation}] 						\glsdesc{ventilation}
+	\item [\gls{ventricle}] 						\glsdesc{ventricle}
+	\item [\gls{vertebrae}] 						\glsdesc{vertebrae}
+	\item [\gls{voluntary_muscle}] 					\glsdesc{voluntary_muscle}
+	\item [\gls{vq_ratio}] 							\glsdesc{vq_ratio}
+	\item [\gls{white_blood_cell}] 					\glsdesc{white_blood_cell}
+	\item [\gls{xiphoid_process}] 					\glsdesc{xiphoid_process}
+	\item [\gls{zygomas}] 							\glsdesc{zygomas}
+\end{description}
+
+\section{Correct Medical Terminology}
+
+\begin{table}[]
+	\caption{Anatomic planes}
+	\label{tab:Anatomic_planes}
+	\begin{tabular}{|l|l|l|}
+		\hline
+		divides body into & name       	& also known as 	\\ \hline
+		\hline 
+		left and right    & sagittal   	& lateral       	\\ \hline
+		front and back    & frontal 	& coronal         	\\ \hline
+		waist             & transverse 	& axial         	\\ \hline
+	\end{tabular}
+\end{table}
+
+%\clearpage
+
+%\section{Skeletal}
+%Two (2) "sub"-skeletons:
+%\paragraph{axial} (head, spine, thoracic cage) and
+%\paragraph{appendicular} (arms, leg, pelvis, and their attachment points)
+
+%\subsection{skull}
+%Two groups:
+%\paragraph{cranium}
+%\paragraph{}
+
+%\subsection{Skull}
+
+%\afterpage{%
+%\clearpage
+%\subsection{Potential Test Questions}
+%\begin{outline}[enumerate]
+%	\1 Why do we need a template here?
+%	\1[] Because LaTeX is stupid so we have to.
+%\end{outline}
+%}
+
+\clearpage
+\end{document}

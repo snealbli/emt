@@ -1,0 +1,253 @@
+\documentclass[11pt, oneside]{memoir}
+\usepackage[utf8]{inputenc}
+
+%%%%%%%%%% Packages %%%%%%%%%%
+%% For starting tables on new page
+\usepackage{afterpage}
+
+%% 
+\usepackage[english]{babel}
+
+%% For IEEE annotated bibliography
+\usepackage[autocite=inline,
+			backend=biber, 
+			style=ieee]{biblatex}
+\addbibresource{./bibliography/annotated.bib}
+
+%% 
+\usepackage{calc}  
+
+%% From TeX stackoverflow: "When using babel or polyglossia with biblatex, loading csquotes is recommended to ensure that quoted texts are typeset according to the rules of your main language."
+\usepackage{csquotes}
+
+%% For removing page numbers, headers, etc. from empty pages
+\usepackage{emptypage}
+
+%% For inserting endnotes in the text
+\usepackage{endnotes}
+
+%% 
+\usepackage{enumitem}
+\setlist[description]{leftmargin=\parindent,labelindent=\parindent}
+
+
+%% NSIN	-- For removing page numbers on part pages
+\usepackage{etoolbox}
+\patchcmd{\part}{plain}{partstart}{}{}
+\makeatletter
+\patchcmd{\@maketitle}{\LARGE}{\fontsize{48pt}{24pt}\selectfont}{}{}
+\makeatother
+
+% For custom header configuration
+\usepackage{fancyhdr}
+
+%% For margins and page size
+\usepackage[a4paper]{geometry}
+
+%% 
+\usepackage{glossaries}
+\newglossary[fcg]{flashcard}{not}{ntn}{Index of}
+\makeglossaries
+
+%%
+% \usepackage{hyperref} -- would go here but must be last
+
+%% 
+\usepackage{longtable}
+
+%% 
+\usepackage{makecell}
+
+%% For sublists
+\setlist[itemize]{nosep}
+\usepackage{outlines}
+
+%% For breaking up into smaller, more manageable files
+\usepackage{subfiles}
+
+%% For chapter number/title on same line
+\usepackage{titlesec}
+
+%% For underline and strikeout
+\usepackage[normalem]{ulem}
+
+%% For highlighting text (in conjunction with soul)
+\usepackage[table]{xcolor}
+
+%% Must be last!
+%\usepackage{hyperref}
+
+
+%%% CONFIGURATION %%%
+%	biblatex
+%%	Used for subdividing citations into used and unused categories
+\DeclareBibliographyCategory{cited}
+\AtEveryCitekey{\addtocategory{cited}{\thefield{entrykey}}}
+
+%	titlesec
+%%	Chapter number AND title on same line
+\titleformat{\chapter}[hang] 
+{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter:}{1em}{} 
+
+
+%%%%%%%%%% MACROS %%%%%%%%%%
+%% Prepend word 'Chapter' to ToC chapters
+\renewcommand\cftchaptername{\chaptername~}
+
+% center column
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+%% Bullets in front of description items
+\let\Item\item
+\newcommand\SpecialItem{\renewcommand\item[1][]{\Item[\textbullet~\bfseries##1]}}
+\renewcommand\enddescription{\endlist\global\let\item\Item}
+
+%% 
+
+
+% Set Table of Contents title
+\addto\captionsenglish{% Replace "english" with the language you use
+	\renewcommand{\contentsname}%
+	{Contents}%
+}
+
+% Set Table of Contents title
+\addto\captionsenglish{% Replace "english" with the language you use
+	\renewcommand{\appendixname}%
+	{Appendix}%
+}
+
+%% fancyhdr stuff
+\pagestyle{fancy}
+\fancyhead{} 					% clear all fields
+
+%% blankpage: blank page
+\newcommand\blankpage{\newpage\mbox{}\thispagestyle{empty}\newpage}
+
+%% sectionbreak: starts section on its own page
+%\newcommand{\sectionbreak}{\clearpage}
+
+%% sectionbreak: starts section on its own page
+%\newcommand{\subsectionbreak}{\hfill\\}
+
+%% Used to make ToC chapters use upper-case Arabic numerals
+\renewcommand{\thechapter}{\arabic{chapter}} 
+
+%% Used to make ToC sections and subsections use Roman numerals upper- and lower-case, resp.
+%\renewcommand{\thesection}{\Roman{section}.} 
+%\renewcommand{\thesubsection}{\roman{subsection}}
+%\renewcommand{\thesubsubsection}{\roman{subsubsection}}
+
+%% Set table length
+\setlength{\arrayrulewidth}{0.33mm}
+
+
+%%%%%%%%%% FRONT MATTER %%%%%%%%%%
+%% Set ToC and section numbering depth
+\settocdepth{subsection}
+\setsecnumdepth{chapter}
+
+% append '\\ \normalsize{for email, hosting}' immediately after title for subtitle
+\title{\HUGE{\bfseries EMT-169}\\[\baselineskip] \LARGE{Class \& Textbook Notes}\vspace{5cm}%
+}
+
+\author{\Large by Sam 'teer' Neal-Blim}
+\date{\LARGE 2021}
+\nocite{*}
+
+%%%%%%%%%% DOCUMENT %%%%%%%%%%
+\begin{document}
+\frontmatter
+
+% Title Page
+\maketitle
+\thispagestyle{empty}
+\newpage
+
+% 
+%\subfile{./chapters/front/abstract}
+%\newpage
+
+% Table of contents
+\setcounter{page}{1}
+\tableofcontents*
+%\listoffigures
+\listoftables
+%\renewcommand\Decide[1]{}
+%\newpage
+
+%                  
+%\subfile{./chapters/front/acknowledgments}
+%\newpage
+
+\mainmatter
+
+% chapters
+\subfile{./chapters/intro}
+\subfile{./chapters/ch01/ch01}
+\subfile{./chapters/ch02/ch02}
+\subfile{./chapters/ch03/ch03}
+\subfile{./chapters/ch04/ch04}
+\subfile{./chapters/ch05/ch05}
+\subfile{./chapters/ch06/ch06}
+\subfile{./chapters/ch07/ch07}
+\subfile{./chapters/ch08/ch08}
+\subfile{./chapters/ch09/ch09}
+\subfile{./chapters/ch10/ch10}
+\subfile{./chapters/ch11/ch11}
+\subfile{./chapters/ch12/ch12}
+\subfile{./chapters/ch13/ch13}
+\subfile{./chapters/ch14/ch14}
+\subfile{./chapters/ch15/ch15}
+\subfile{./chapters/ch16/ch16}
+\subfile{./chapters/ch17/ch17}
+\subfile{./chapters/ch18/ch18}
+\subfile{./chapters/ch19/ch19}
+\subfile{./chapters/ch20/ch20}
+\subfile{./chapters/ch21/ch21}
+\subfile{./chapters/ch22/ch22}
+\subfile{./chapters/ch23/ch23}
+\subfile{./chapters/ch24/ch24}
+\subfile{./chapters/ch25/ch25}
+\subfile{./chapters/ch26/ch26}
+\subfile{./chapters/ch27/ch27}
+\subfile{./chapters/ch28/ch28}
+\subfile{./chapters/ch29/ch29}
+\subfile{./chapters/ch30/ch30}
+\subfile{./chapters/ch31/ch31}
+\subfile{./chapters/ch32/ch32}
+\subfile{./chapters/ch33/ch33}
+\subfile{./chapters/ch34/ch34}
+\subfile{./chapters/ch35/ch35}
+\subfile{./chapters/ch36/ch36}
+\subfile{./chapters/ch37/ch37}
+\subfile{./chapters/ch38/ch38}
+\subfile{./chapters/ch39/ch39}
+\subfile{./chapters/ch40/ch40}
+\subfile{./chapters/ch41/ch41}
+
+\newpage
+
+% appendices
+\subfile{./chapters/appendix_a}
+\subfile{./chapters/appendix_b}
+\subfile{./chapters/appendix_c}
+\subfile{./chapters/appendix_d}
+\subfile{./chapters/appendix_e}
+
+\backmatter
+
+%% GLOSSARIES %%
+% acronyms
+\printglossary[type=\acronymtype]
+
+% normal entries
+\printglossary
+
+% bibliography
+\printbibliography[category=cited]
+\begingroup
+	\renewcommand{\cleardoublepage}{}
+	\printbibliography[title={Further Reading},notcategory=cited]
+\endgroup
+\end{document}

@@ -1,0 +1,55 @@
+\documentclass[../../EMT-169.tex]{subfiles}
+
+\begin{document}
+\setcounter{chapter}{40}
+\label{ch:chapter41}
+\clearpage
+	
+% Glossary acronym entries
+	\newacronym{crm}{CRM}{crew resource management}
+	
+% Glossary entries
+
+
+	\newglossaryentry{group}
+	{
+		name=group,
+		description={in the context of \acrshort{ems} a collection of individual healthcare providers working to health the patient}
+	}
+	
+	\newglossaryentry{team}
+	{
+		name=team,
+		description={in the context of \acrshort{ems} a collection of health care providers who have been assigned specific roles, working interdependently in a coordinated manner under a designated leader}
+	}
+
+	\newglossaryentry{team_leader}
+	{
+		name=team leader,
+		description={the team member who provides a combination of role-assignment, coordination, oversight, centralized decision making, and support for the team to accomplish its goals and achieve desired results}
+	}
+		
+\chapter{A Team Approach To Health Care}
+
+\subsection*{Abbreviations}
+\begin{description}[leftmargin=!,labelwidth=\widthof{\bfseries ABCD}]
+	\item [\acrshort{crm}] \acrlong{crm}
+\end{description}
+
+ems
+\begin{description}	
+	\item [\gls{group}] \glsdesc{group}
+	\item [\gls{team}] \glsdesc{team}
+	\item [\gls{team_leader}] \glsdesc{team_leader}
+\end{description}\hfill \\
+
+\afterpage{%
+\clearpage
+\subsection{Potential Test Questions}
+\begin{outline}[enumerate]
+	\1 Why do we need a template here?
+	\1[] Because LaTeX is stupid so we have to.
+\end{outline}
+}
+
+\end{document}
