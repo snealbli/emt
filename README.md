@@ -6,7 +6,7 @@ This is a collection of materials pertaining to EMT-B class.  This includes mate
 The textbook mentioned is *Emergency Care and Transportation of the Sick and Injured (11th ed.)* 978-1284080179.
 
 
-# Study materials:
+### Study materials:
 - textbook 
     - vocab terms
     - chapter outlines/synopses
